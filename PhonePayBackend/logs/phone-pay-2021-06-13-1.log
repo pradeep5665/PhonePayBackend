@@ -1,0 +1,322 @@
+2021-06-13 00:03:32.400  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.PhonepayCheckController            : Phone-Pay Check API called for : 1038060
+2021-06-13 00:03:32.434  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into getBorrowersInfo method with loan number : 1038060
+2021-06-13 00:03:32.435  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-06-13 00:03:32.435  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-06-13 00:03:34.169  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@792e4923, org.uhc.dao.dto.BorrowerInfoDto@3f0624a1]
+2021-06-13 00:03:34.170  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-06-13 00:03:34.170  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-06-13 00:03:34.170  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-06-13 00:03:35.889  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-06-13 00:03:35.889  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getPropertyInfoByLoanNum method
+2021-06-13 00:03:35.889  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For Property Details, Loan number entered is 
+2021-06-13 00:03:37.610  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Property Details are : org.uhc.dao.dto.PropertyDto@665c6f53
+2021-06-13 00:03:37.610  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getPropertyInfoByLoanNum method
+2021-06-13 00:03:37.610  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountsByLoanNumber method
+2021-06-13 00:03:37.610  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : To loan number, user name enterd is :1038060
+2021-06-13 00:03:39.329  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of loan number is: [1038060, 91038060]
+2021-06-13 00:03:39.330  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountsByLoanNumber method1038060
+2021-06-13 00:03:39.330  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getMailingAddressByLoanNum method
+2021-06-13 00:03:39.330  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For Getting Mailing Adress, Loan number entered is 
+2021-06-13 00:03:41.087  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Mailing Adress is : org.uhc.dao.dto.MailingAddressDto@19b7b08b
+2021-06-13 00:03:41.087  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getMailingAddressByLoanNum method
+2021-06-13 00:03:41.088  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:03:41.088  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:03:42.854  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:03:42.854  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:03:42.854  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:03:42.854  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:03:42.854  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:03:43.141  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:03:43.141  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:03:43.142  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:03:44.860  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 156990 for userId: 287
+2021-06-13 00:03:44.861  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:03:44.861  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:03:44.861  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:03:46.625  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:03:46.625  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:03:46.625  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:03:46.625  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:03:46.625  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:03:46.916  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:03:46.917  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:03:46.917  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:03:48.638  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 917259 for userId: 287
+2021-06-13 00:03:48.638  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:03:48.639  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:03:48.639  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getPhonePayFeeList service
+2021-06-13 00:03:48.927  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getPhonePayFeeList method
+2021-06-13 00:03:48.927  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from getBorrowersInfo method
+2021-06-13 00:03:59.054  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.c.BankingInfoController              : banking Info API called: BankingInfoRequest [routingNum=324377516]
+2021-06-13 00:03:59.054  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.s.i.BankingInfoServiceImpl           : Entering into getBankingInfo method
+2021-06-13 00:03:59.054  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Checking if routing number is whitelisted by using routing number: 324377516
+2021-06-13 00:04:00.773  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Exit from isRoutingNumberWhiteListed method
+2021-06-13 00:04:00.773  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Entering into getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:04:02.494  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Exit from getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:04:02.495  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.s.i.BankingInfoServiceImpl           : Exit from getBankingInfo method
+2021-06-13 00:04:05.738  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.c.CheckStopFileExistanceController   : Cancel Payment Service API is called: 1038060
+2021-06-13 00:04:05.738  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.BankingInfoServiceImpl           : Entering into isLoanAccountInStopFile method with loan number : 1038060
+2021-06-13 00:04:05.738  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into isLoanInStopFile method
+2021-06-13 00:04:07.456  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : loan account is not available in stopfile
+2021-06-13 00:04:07.456  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from isLoanInStopFile method
+2021-06-13 00:06:40.469  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.c.PhonepayCheckController            : Phone-Pay Check API called for : 138060
+2021-06-13 00:06:40.469  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.s.i.PhonepayCheckServiceImpl         : Entering into getBorrowersInfo method with loan number : 138060
+2021-06-13 00:06:40.470  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-06-13 00:06:40.470  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-06-13 00:06:42.191  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : List of Borrower is:Borrowr info could not be found 
+2021-06-13 00:06:42.191  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-06-13 00:06:42.191  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-06-13 00:06:42.191  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-06-13 00:06:43.910  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-06-13 00:06:43.910  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.s.i.PhonepayCheckServiceImpl         : Exit from getBorrowersInfo method
+2021-06-13 00:06:56.578  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.c.PhonepayCheckController            : Phone-Pay Check API called for : 1038060
+2021-06-13 00:06:56.578  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Entering into getBorrowersInfo method with loan number : 1038060
+2021-06-13 00:06:56.578  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-06-13 00:06:56.578  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-06-13 00:06:58.297  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@37f93626, org.uhc.dao.dto.BorrowerInfoDto@393edea9]
+2021-06-13 00:06:58.297  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-06-13 00:06:58.297  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-06-13 00:06:58.297  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-06-13 00:07:00.017  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-06-13 00:07:00.017  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getPropertyInfoByLoanNum method
+2021-06-13 00:07:00.017  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : For Property Details, Loan number entered is 
+2021-06-13 00:07:01.736  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Property Details are : org.uhc.dao.dto.PropertyDto@3d015d56
+2021-06-13 00:07:01.736  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getPropertyInfoByLoanNum method
+2021-06-13 00:07:01.736  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountsByLoanNumber method
+2021-06-13 00:07:01.736  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : To loan number, user name enterd is :1038060
+2021-06-13 00:07:03.454  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : List of loan number is: [1038060, 91038060]
+2021-06-13 00:07:03.454  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountsByLoanNumber method1038060
+2021-06-13 00:07:03.454  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getMailingAddressByLoanNum method
+2021-06-13 00:07:03.454  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : For Getting Mailing Adress, Loan number entered is 
+2021-06-13 00:07:05.213  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Mailing Adress is : org.uhc.dao.dto.MailingAddressDto@7803d492
+2021-06-13 00:07:05.213  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getMailingAddressByLoanNum method
+2021-06-13 00:07:05.213  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:07:05.213  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:07:06.977  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:07:06.977  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:07:06.977  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:07:06.977  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:07:06.977  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:07:07.264  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:07:07.264  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:07:07.264  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:07:08.985  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 600946 for userId: 287
+2021-06-13 00:07:08.986  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:07:08.986  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:07:08.986  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:07:10.750  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:07:10.750  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:07:10.751  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:07:10.751  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:07:10.751  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:07:11.037  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:07:11.037  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:07:11.037  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:07:12.757  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 545626 for userId: 287
+2021-06-13 00:07:12.757  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:07:12.757  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:07:12.757  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getPhonePayFeeList service
+2021-06-13 00:07:13.045  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getPhonePayFeeList method
+2021-06-13 00:07:13.045  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.PhonepayCheckServiceImpl         : Exit from getBorrowersInfo method
+2021-06-13 00:07:24.192  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.BankingInfoController              : banking Info API called: BankingInfoRequest [routingNum=324377516]
+2021-06-13 00:07:24.192  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.BankingInfoServiceImpl           : Entering into getBankingInfo method
+2021-06-13 00:07:24.192  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Checking if routing number is whitelisted by using routing number: 324377516
+2021-06-13 00:07:25.914  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from isRoutingNumberWhiteListed method
+2021-06-13 00:07:25.915  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:07:27.634  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:07:27.634  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.BankingInfoServiceImpl           : Exit from getBankingInfo method
+2021-06-13 00:07:32.789  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.c.CheckStopFileExistanceController   : Cancel Payment Service API is called: 1038060
+2021-06-13 00:07:32.789  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.s.i.BankingInfoServiceImpl           : Entering into isLoanAccountInStopFile method with loan number : 1038060
+2021-06-13 00:07:32.789  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Entering into isLoanInStopFile method
+2021-06-13 00:07:34.510  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : loan account is not available in stopfile
+2021-06-13 00:07:34.510  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Exit from isLoanInStopFile method
+2021-06-13 00:08:39.941  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.c.PhonepayCheckController            : Phone-Pay Check API called for : 1038060
+2021-06-13 00:08:39.941  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Entering into getBorrowersInfo method with loan number : 1038060
+2021-06-13 00:08:39.941  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-06-13 00:08:39.941  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-06-13 00:08:41.660  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@29f8ba08, org.uhc.dao.dto.BorrowerInfoDto@273f5147]
+2021-06-13 00:08:41.660  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-06-13 00:08:41.660  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-06-13 00:08:41.660  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-06-13 00:08:43.380  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-06-13 00:08:43.380  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getPropertyInfoByLoanNum method
+2021-06-13 00:08:43.380  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : For Property Details, Loan number entered is 
+2021-06-13 00:08:45.112  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Property Details are : org.uhc.dao.dto.PropertyDto@2300d178
+2021-06-13 00:08:45.112  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getPropertyInfoByLoanNum method
+2021-06-13 00:08:45.112  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountsByLoanNumber method
+2021-06-13 00:08:45.113  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : To loan number, user name enterd is :1038060
+2021-06-13 00:08:46.831  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : List of loan number is: [1038060, 91038060]
+2021-06-13 00:08:46.831  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountsByLoanNumber method1038060
+2021-06-13 00:08:46.831  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getMailingAddressByLoanNum method
+2021-06-13 00:08:46.831  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : For Getting Mailing Adress, Loan number entered is 
+2021-06-13 00:08:48.586  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Mailing Adress is : org.uhc.dao.dto.MailingAddressDto@a46854e
+2021-06-13 00:08:48.587  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getMailingAddressByLoanNum method
+2021-06-13 00:08:48.587  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:08:48.587  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:08:50.350  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:08:50.351  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:08:50.351  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:08:50.351  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:08:50.351  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:08:50.638  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:08:50.638  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:08:50.638  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:08:52.358  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 927324 for userId: 287
+2021-06-13 00:08:52.358  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:08:52.358  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:08:52.358  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:08:54.122  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:08:54.122  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:08:54.122  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:08:54.122  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:08:54.122  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:08:54.409  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:08:54.409  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:08:54.409  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:08:56.127  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 854177 for userId: 287
+2021-06-13 00:08:56.127  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:08:56.127  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:08:56.127  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into getPhonePayFeeList service
+2021-06-13 00:08:56.413  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from getPhonePayFeeList method
+2021-06-13 00:08:56.413  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.PhonepayCheckServiceImpl         : Exit from getBorrowersInfo method
+2021-06-13 00:09:03.914  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.c.BankingInfoController              : banking Info API called: BankingInfoRequest [routingNum=324377516]
+2021-06-13 00:09:03.914  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.s.i.BankingInfoServiceImpl           : Entering into getBankingInfo method
+2021-06-13 00:09:03.914  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Checking if routing number is whitelisted by using routing number: 324377516
+2021-06-13 00:09:05.636  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Exit from isRoutingNumberWhiteListed method
+2021-06-13 00:09:05.637  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Entering into getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:09:07.356  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Exit from getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:09:07.356  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.s.i.BankingInfoServiceImpl           : Exit from getBankingInfo method
+2021-06-13 00:09:13.165  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.c.CheckStopFileExistanceController   : Cancel Payment Service API is called: 1038060
+2021-06-13 00:09:13.165  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.BankingInfoServiceImpl           : Entering into isLoanAccountInStopFile method with loan number : 1038060
+2021-06-13 00:09:13.165  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into isLoanInStopFile method
+2021-06-13 00:09:14.884  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : loan account is not available in stopfile
+2021-06-13 00:09:14.884  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from isLoanInStopFile method
+2021-06-13 00:15:02.865  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.PhonepayCheckController            : Phone-Pay Check API called for : 1038060
+2021-06-13 00:15:02.865  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into getBorrowersInfo method with loan number : 1038060
+2021-06-13 00:15:02.865  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-06-13 00:15:02.865  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-06-13 00:15:04.585  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@12db95cf, org.uhc.dao.dto.BorrowerInfoDto@1c768819]
+2021-06-13 00:15:04.585  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-06-13 00:15:04.586  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-06-13 00:15:04.586  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-06-13 00:15:06.305  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-06-13 00:15:06.305  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getPropertyInfoByLoanNum method
+2021-06-13 00:15:06.305  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For Property Details, Loan number entered is 
+2021-06-13 00:15:08.025  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Property Details are : org.uhc.dao.dto.PropertyDto@19d55a33
+2021-06-13 00:15:08.025  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getPropertyInfoByLoanNum method
+2021-06-13 00:15:08.025  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountsByLoanNumber method
+2021-06-13 00:15:08.025  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : To loan number, user name enterd is :1038060
+2021-06-13 00:15:09.745  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of loan number is: [1038060, 91038060]
+2021-06-13 00:15:09.745  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountsByLoanNumber method1038060
+2021-06-13 00:15:09.745  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getMailingAddressByLoanNum method
+2021-06-13 00:15:09.745  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For Getting Mailing Adress, Loan number entered is 
+2021-06-13 00:15:11.502  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Mailing Adress is : org.uhc.dao.dto.MailingAddressDto@3dc2926a
+2021-06-13 00:15:11.502  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getMailingAddressByLoanNum method
+2021-06-13 00:15:11.502  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:15:11.502  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:15:13.263  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:15:13.263  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:15:13.263  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:15:13.263  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:15:13.263  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:15:13.549  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:15:13.549  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:15:13.549  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:15:15.269  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 068031 for userId: 287
+2021-06-13 00:15:15.269  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:15:15.269  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:15:15.269  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:15:17.043  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:15:17.043  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:15:17.044  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:15:17.044  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:15:17.044  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:15:17.330  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:15:17.330  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:15:17.330  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:15:19.051  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 537326 for userId: 287
+2021-06-13 00:15:19.051  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:15:19.051  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:15:19.051  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getPhonePayFeeList service
+2021-06-13 00:15:19.338  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getPhonePayFeeList method
+2021-06-13 00:15:19.338  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from getBorrowersInfo method
+2021-06-13 00:15:26.667  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.c.BankingInfoController              : banking Info API called: BankingInfoRequest [routingNum=324377516]
+2021-06-13 00:15:26.667  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.s.i.BankingInfoServiceImpl           : Entering into getBankingInfo method
+2021-06-13 00:15:26.667  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Checking if routing number is whitelisted by using routing number: 324377516
+2021-06-13 00:15:28.389  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Exit from isRoutingNumberWhiteListed method
+2021-06-13 00:15:28.389  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Entering into getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:15:29.410  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.c.BankingInfoController              : banking Info API called: BankingInfoRequest [routingNum=324377516]
+2021-06-13 00:15:29.410  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.BankingInfoServiceImpl           : Entering into getBankingInfo method
+2021-06-13 00:15:29.410  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Checking if routing number is whitelisted by using routing number: 324377516
+2021-06-13 00:15:30.107  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Exit from getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:15:30.107  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.s.i.BankingInfoServiceImpl           : Exit from getBankingInfo method
+2021-06-13 00:15:31.369  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from isRoutingNumberWhiteListed method
+2021-06-13 00:15:31.370  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:15:33.092  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:15:33.092  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.BankingInfoServiceImpl           : Exit from getBankingInfo method
+2021-06-13 00:15:35.396  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.c.CheckStopFileExistanceController   : Cancel Payment Service API is called: 1038060
+2021-06-13 00:15:35.397  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.s.i.BankingInfoServiceImpl           : Entering into isLoanAccountInStopFile method with loan number : 1038060
+2021-06-13 00:15:35.397  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Entering into isLoanInStopFile method
+2021-06-13 00:15:37.119  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : loan account is not available in stopfile
+2021-06-13 00:15:37.119  INFO chetuiwk0165 --- [nio-8080-exec-6] o.u.d.i.UserDaoImpl                      : Exit from isLoanInStopFile method
+2021-06-13 00:20:04.337  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.c.PhonepayCheckController            : Phone-Pay Check API called for : 1038060
+2021-06-13 00:20:04.337  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Entering into getBorrowersInfo method with loan number : 1038060
+2021-06-13 00:20:04.337  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-06-13 00:20:04.337  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-06-13 00:20:06.063  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3c6288c1, org.uhc.dao.dto.BorrowerInfoDto@4a89a129]
+2021-06-13 00:20:06.064  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-06-13 00:20:06.064  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-06-13 00:20:06.064  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-06-13 00:20:07.792  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-06-13 00:20:07.792  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getPropertyInfoByLoanNum method
+2021-06-13 00:20:07.792  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : For Property Details, Loan number entered is 
+2021-06-13 00:20:09.515  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Property Details are : org.uhc.dao.dto.PropertyDto@159e63c0
+2021-06-13 00:20:09.515  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getPropertyInfoByLoanNum method
+2021-06-13 00:20:09.515  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountsByLoanNumber method
+2021-06-13 00:20:09.515  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : To loan number, user name enterd is :1038060
+2021-06-13 00:20:11.245  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : List of loan number is: [1038060, 91038060]
+2021-06-13 00:20:11.245  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountsByLoanNumber method1038060
+2021-06-13 00:20:11.246  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getMailingAddressByLoanNum method
+2021-06-13 00:20:11.246  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : For Getting Mailing Adress, Loan number entered is 
+2021-06-13 00:20:13.022  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Mailing Adress is : org.uhc.dao.dto.MailingAddressDto@783f6537
+2021-06-13 00:20:13.023  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getMailingAddressByLoanNum method
+2021-06-13 00:20:13.023  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:20:13.023  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:20:14.812  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:20:14.813  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:20:14.813  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:20:14.813  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:20:14.813  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:20:15.099  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:20:15.099  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:20:15.099  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:20:17.057  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 247089 for userId: 287
+2021-06-13 00:20:17.057  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:20:17.058  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-06-13 00:20:17.058  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-06-13 00:20:18.826  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-06-13 00:20:18.827  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-06-13 00:20:18.827  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-06-13 00:20:18.827  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-06-13 00:20:18.827  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-06-13 00:20:19.118  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-06-13 00:20:19.118  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:20:19.118  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-06-13 00:20:20.839  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 150763 for userId: 287
+2021-06-13 00:20:20.839  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-06-13 00:20:20.839  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-06-13 00:20:20.839  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getPhonePayFeeList service
+2021-06-13 00:20:21.127  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getPhonePayFeeList method
+2021-06-13 00:20:21.127  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.PhonepayCheckServiceImpl         : Exit from getBorrowersInfo method
+2021-06-13 00:20:30.754  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.c.BankingInfoController              : banking Info API called: BankingInfoRequest [routingNum=324377516]
+2021-06-13 00:20:30.754  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.BankingInfoServiceImpl           : Entering into getBankingInfo method
+2021-06-13 00:20:30.754  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Checking if routing number is whitelisted by using routing number: 324377516
+2021-06-13 00:20:32.478  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from isRoutingNumberWhiteListed method
+2021-06-13 00:20:32.478  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering into getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:20:34.202  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit from getBankingInfoByRoutingNum method: 324377516
+2021-06-13 00:20:34.202  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.BankingInfoServiceImpl           : Exit from getBankingInfo method
+2021-06-13 00:20:39.103  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.c.CheckStopFileExistanceController   : Cancel Payment Service API is called: 1038060
+2021-06-13 00:20:39.103  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.s.i.BankingInfoServiceImpl           : Entering into isLoanAccountInStopFile method with loan number : 1038060
+2021-06-13 00:20:39.103  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Entering into isLoanInStopFile method
+2021-06-13 00:20:40.844  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : loan account is not available in stopfile
+2021-06-13 00:20:40.844  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Exit from isLoanInStopFile method

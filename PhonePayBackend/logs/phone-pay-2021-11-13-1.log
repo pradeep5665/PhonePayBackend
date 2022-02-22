@@ -1,0 +1,1282 @@
+2021-11-13 12:44:13.028  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 20884 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-11-13 12:44:13.044  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-11-13 12:44:13.073  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 12:44:13 IST 2021]; root of context hierarchy
+2021-11-13 12:44:13.180  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-11-13 12:44:25.363  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-11-13 12:44:25.375  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-11-13 12:44:25.376  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-11-13 12:44:25.466  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-11-13 12:44:25.467  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 12396 ms
+2021-11-13 12:44:25.593  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-11-13 12:44:25.593  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-13 12:44:25.593  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-13 12:44:25.593  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-11-13 12:44:25.593  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-13 12:44:25.594  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-13 12:44:25.594  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-11-13 12:44:26.016  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 75565fa0-7585-4ab7-9b28-323d8070f509
+
+2021-11-13 12:44:26.132  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68217d41, org.springframework.security.web.context.SecurityContextPersistenceFilter@118102ee, org.springframework.security.web.header.HeaderWriterFilter@3491e86e, org.springframework.security.web.authentication.logout.LogoutFilter@3874b815, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@771d1ffb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e1f584d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ac45389, org.springframework.security.web.session.SessionManagementFilter@2eaef76d, org.springframework.security.web.access.ExceptionTranslationFilter@174e1b69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56078cea]
+2021-11-13 12:44:26.288  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 12:44:13 IST 2021]; root of context hierarchy
+2021-11-13 12:44:26.340  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-11-13 12:44:26.343  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-11-13 12:44:26.344  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-11-13 12:44:26.344  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 12:44:26.345  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 12:44:26.345  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 12:44:26.345  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 12:44:26.346  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 12:44:26.346  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-11-13 12:44:26.346  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-11-13 12:44:26.347  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-11-13 12:44:26.350  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-11-13 12:44:26.351  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-11-13 12:44:26.351  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-11-13 12:44:26.352  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-11-13 12:44:26.352  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-11-13 12:44:26.353  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-11-13 12:44:26.353  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-11-13 12:44:26.355  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-11-13 12:44:26.355  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-11-13 12:44:26.355  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-11-13 12:44:26.356  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-11-13 12:44:26.356  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-11-13 12:44:26.356  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-11-13 12:44:26.357  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-11-13 12:44:26.358  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-11-13 12:44:26.358  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-11-13 12:44:26.383  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 12:44:26.383  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 12:44:26.406  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 12:44:26.522  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-11-13 12:44:26.534  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-13 12:44:26.543  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-13 12:44:26.606  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-11-13 12:44:26.619  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-11-13 12:44:26.622  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 13.741 seconds (JVM running for 14.34)
+2021-11-13 12:47:03.845  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-11-13 12:47:03.845  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-11-13 12:47:03.862  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2021-11-13 12:47:03.954  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@49d363b3
+2021-11-13 12:47:16.914  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:47:18.613  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:47:49.866  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@716f65, org.uhc.dao.dto.BorrowerInfoDto@140b68db]
+2021-11-13 12:47:50.433  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:47:52.708  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:47:54.406  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3cf95922, org.uhc.dao.dto.BorrowerInfoDto@198055eb]
+2021-11-13 12:47:54.972  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:47:57.242  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:47:58.941  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1d37dd73, org.uhc.dao.dto.BorrowerInfoDto@327cbdfa]
+2021-11-13 12:47:59.508  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:01.202  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:02.899  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@44bad2de, org.uhc.dao.dto.BorrowerInfoDto@5f0ef8af]
+2021-11-13 12:48:03.468  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:05.164  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:06.857  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@398b80eb, org.uhc.dao.dto.BorrowerInfoDto@11e8ccf5]
+2021-11-13 12:48:07.424  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:08.836  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:10.532  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@66bd460a, org.uhc.dao.dto.BorrowerInfoDto@6154a7bf]
+2021-11-13 12:48:11.098  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:12.793  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:14.490  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4bdefa6, org.uhc.dao.dto.BorrowerInfoDto@53e514a0]
+2021-11-13 12:48:15.059  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:16.474  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:18.167  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5f6485c0, org.uhc.dao.dto.BorrowerInfoDto@1b49b8cc]
+2021-11-13 12:48:18.451  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:20.146  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:21.838  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@70e2a4dc, org.uhc.dao.dto.BorrowerInfoDto@bd9fe74]
+2021-11-13 12:48:22.123  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:23.253  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:24.946  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@70e8304a, org.uhc.dao.dto.BorrowerInfoDto@26316943]
+2021-11-13 12:48:25.798  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:27.503  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:29.197  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4390ed1d, org.uhc.dao.dto.BorrowerInfoDto@77e9145]
+2021-11-13 12:48:29.763  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:30.892  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:32.584  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@36258b80, org.uhc.dao.dto.BorrowerInfoDto@1bf39776]
+2021-11-13 12:48:33.151  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:34.845  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:36.538  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5fcf6910, org.uhc.dao.dto.BorrowerInfoDto@2c483f15]
+2021-11-13 12:48:37.103  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:38.244  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:39.938  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@36abd897, org.uhc.dao.dto.BorrowerInfoDto@3164b113]
+2021-11-13 12:48:40.796  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:42.495  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:44.189  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1547c9c6, org.uhc.dao.dto.BorrowerInfoDto@781aecec]
+2021-11-13 12:48:44.756  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:45.887  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:47.584  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@101dfc18, org.uhc.dao.dto.BorrowerInfoDto@4652b21]
+2021-11-13 12:48:48.435  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:49.852  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:51.544  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2f47db92, org.uhc.dao.dto.BorrowerInfoDto@152f1a]
+2021-11-13 12:48:52.396  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:54.093  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:55.784  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5286fecc, org.uhc.dao.dto.BorrowerInfoDto@430c2445]
+2021-11-13 12:48:56.635  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 12:48:58.048  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 12:48:59.743  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@42660eda, org.uhc.dao.dto.BorrowerInfoDto@1a8dbe27]
+2021-11-13 13:23:42.499  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 14752 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-11-13 13:23:42.502  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-11-13 13:23:42.529  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 13:23:42 IST 2021]; root of context hierarchy
+2021-11-13 13:23:42.660  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-11-13 13:23:43.686  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-11-13 13:23:43.697  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-11-13 13:23:43.698  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-11-13 13:23:43.783  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-11-13 13:23:43.783  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1257 ms
+2021-11-13 13:23:43.887  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-11-13 13:23:43.888  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-13 13:23:43.888  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-13 13:23:43.888  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-11-13 13:23:43.888  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-13 13:23:43.889  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-13 13:23:43.889  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-11-13 13:23:44.225  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: de7aa933-f42f-4199-b1b7-6650786b6d3d
+
+2021-11-13 13:23:44.306  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36fcf6c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@68f32020, org.springframework.security.web.header.HeaderWriterFilter@4ca8dbfa, org.springframework.security.web.authentication.logout.LogoutFilter@41fed14f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b047fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34819867, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1aac188d, org.springframework.security.web.session.SessionManagementFilter@71cb3139, org.springframework.security.web.access.ExceptionTranslationFilter@dab48d3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ab4ba9f]
+2021-11-13 13:23:44.445  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 13:23:42 IST 2021]; root of context hierarchy
+2021-11-13 13:23:44.488  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-11-13 13:23:44.490  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-11-13 13:23:44.490  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-11-13 13:23:44.491  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 13:23:44.491  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 13:23:44.492  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 13:23:44.492  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 13:23:44.492  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 13:23:44.493  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-11-13 13:23:44.493  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-11-13 13:23:44.494  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-11-13 13:23:44.496  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-11-13 13:23:44.496  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-11-13 13:23:44.497  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-11-13 13:23:44.497  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-11-13 13:23:44.497  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-11-13 13:23:44.497  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-11-13 13:23:44.498  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-11-13 13:23:44.500  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-11-13 13:23:44.501  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-11-13 13:23:44.501  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-11-13 13:23:44.501  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-11-13 13:23:44.502  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-11-13 13:23:44.502  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-11-13 13:23:44.503  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-11-13 13:23:44.504  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-11-13 13:23:44.504  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-11-13 13:23:44.519  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 13:23:44.520  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 13:23:44.540  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 13:23:44.635  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-11-13 13:23:44.646  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-13 13:23:44.656  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-13 13:23:44.676  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-11-13 13:23:44.689  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-11-13 13:23:44.691  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 2.35 seconds (JVM running for 3.006)
+2021-11-13 14:24:49.505  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-11-13 14:24:49.514  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-11-13 14:24:49.599  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 85 ms
+2021-11-13 14:24:49.776  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@275aebd6
+2021-11-13 14:25:03.008  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:25:04.726  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:25:37.139  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2fa38449, org.uhc.dao.dto.BorrowerInfoDto@4fbde547]
+2021-11-13 14:25:37.713  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:25:38.862  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:25:40.594  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@78ccdb77, org.uhc.dao.dto.BorrowerInfoDto@daa693f]
+2021-11-13 14:25:41.165  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:25:42.879  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:25:44.590  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@49968d62, org.uhc.dao.dto.BorrowerInfoDto@5ca201da]
+2021-11-13 14:25:45.165  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:25:46.306  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:25:48.020  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@42ab6e5a, org.uhc.dao.dto.BorrowerInfoDto@1c9604a1]
+2021-11-13 14:25:48.883  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:25:50.596  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:25:52.306  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@343664af, org.uhc.dao.dto.BorrowerInfoDto@1829dd84]
+2021-11-13 14:25:52.882  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:25:54.025  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:25:55.752  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4ad3e14a, org.uhc.dao.dto.BorrowerInfoDto@570f17cb]
+2021-11-13 14:25:56.613  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:25:58.378  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:26:00.583  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@509b1299, org.uhc.dao.dto.BorrowerInfoDto@68830f3]
+2021-11-13 14:26:01.443  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:26:03.156  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:26:04.868  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@538458d9, org.uhc.dao.dto.BorrowerInfoDto@7c1abc2d]
+2021-11-13 14:26:05.733  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 14:26:07.161  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 14:26:08.870  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3355cf35, org.uhc.dao.dto.BorrowerInfoDto@42e60b16]
+2021-11-13 14:41:17.014  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 9296 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-11-13 14:41:17.017  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-11-13 14:41:17.053  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 14:41:17 IST 2021]; root of context hierarchy
+2021-11-13 14:41:17.205  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-11-13 14:41:21.603  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-11-13 14:41:21.831  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-11-13 14:41:21.832  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-11-13 14:41:23.412  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-11-13 14:41:23.413  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 6362 ms
+2021-11-13 14:41:23.730  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-11-13 14:41:23.731  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-13 14:41:23.731  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-13 14:41:23.731  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-11-13 14:41:23.731  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-13 14:41:23.732  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-13 14:41:23.732  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-11-13 14:41:27.326  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: da960e80-6c5a-4690-afbe-dc196adcc50a
+
+2021-11-13 14:41:29.304  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@664e5dee, org.springframework.security.web.context.SecurityContextPersistenceFilter@7063686f, org.springframework.security.web.header.HeaderWriterFilter@4315e9af, org.springframework.security.web.authentication.logout.LogoutFilter@72d0f2b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76f856a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3491e86e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@431f1eaf, org.springframework.security.web.session.SessionManagementFilter@4f966719, org.springframework.security.web.access.ExceptionTranslationFilter@69e05f61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6107165]
+2021-11-13 14:41:29.935  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 14:41:17 IST 2021]; root of context hierarchy
+2021-11-13 14:41:30.566  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-11-13 14:41:30.570  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-11-13 14:41:30.571  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-11-13 14:41:30.573  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 14:41:30.574  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 14:41:30.574  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 14:41:30.575  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 14:41:30.576  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 14:41:30.577  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-11-13 14:41:30.578  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-11-13 14:41:30.579  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-11-13 14:41:30.583  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-11-13 14:41:30.583  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-11-13 14:41:30.584  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-11-13 14:41:30.584  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-11-13 14:41:30.584  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-11-13 14:41:30.585  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-11-13 14:41:30.586  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-11-13 14:41:30.588  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-11-13 14:41:30.588  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-11-13 14:41:30.589  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-11-13 14:41:30.589  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-11-13 14:41:30.590  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-11-13 14:41:30.590  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-11-13 14:41:30.591  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-11-13 14:41:30.592  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-11-13 14:41:30.593  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-11-13 14:41:30.632  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 14:41:30.632  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 14:41:30.769  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 14:41:31.267  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-11-13 14:41:31.292  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-13 14:41:31.307  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-13 14:41:31.344  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-11-13 14:41:31.365  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-11-13 14:41:31.371  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 14.577 seconds (JVM running for 15.291)
+2021-11-13 15:23:28.170  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-11-13 15:23:28.178  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-11-13 15:23:28.220  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2021-11-13 15:23:28.347  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@2fb585f2
+2021-11-13 15:23:41.509  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:23:43.216  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:15.624  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@38cca177, org.uhc.dao.dto.BorrowerInfoDto@62e23a92]
+2021-11-13 15:24:16.193  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:18.667  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:20.376  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@348a1518, org.uhc.dao.dto.BorrowerInfoDto@34e87753]
+2021-11-13 15:24:20.946  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:23.216  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:24.919  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@57f2f42, org.uhc.dao.dto.BorrowerInfoDto@543bc051]
+2021-11-13 15:24:25.487  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:27.190  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:28.894  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@307d2d1b, org.uhc.dao.dto.BorrowerInfoDto@475886a8]
+2021-11-13 15:24:29.465  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:31.163  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:32.868  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@685e348f, org.uhc.dao.dto.BorrowerInfoDto@6b3082ea]
+2021-11-13 15:24:33.437  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:34.857  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:36.580  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5d86cbe6, org.uhc.dao.dto.BorrowerInfoDto@7aa11acf]
+2021-11-13 15:24:37.147  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:38.844  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:40.545  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6342a358, org.uhc.dao.dto.BorrowerInfoDto@c0a5a08]
+2021-11-13 15:24:41.114  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:42.535  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:44.232  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@67b87994, org.uhc.dao.dto.BorrowerInfoDto@15bd60ce]
+2021-11-13 15:24:44.516  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:46.540  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:48.238  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@63935942, org.uhc.dao.dto.BorrowerInfoDto@3d179522]
+2021-11-13 15:24:48.524  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:49.658  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:51.364  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@19c73fcd, org.uhc.dao.dto.BorrowerInfoDto@6782872b]
+2021-11-13 15:24:52.238  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:53.940  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:55.678  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1e229bd0, org.uhc.dao.dto.BorrowerInfoDto@1f1db3b3]
+2021-11-13 15:24:56.246  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:24:57.379  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:24:59.080  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3f84deca, org.uhc.dao.dto.BorrowerInfoDto@4c4cadce]
+2021-11-13 15:24:59.650  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:25:01.353  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:25:03.056  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@463a538c, org.uhc.dao.dto.BorrowerInfoDto@3448f0d3]
+2021-11-13 15:25:03.627  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:25:04.764  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:25:06.466  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2da31a1e, org.uhc.dao.dto.BorrowerInfoDto@428e0b9]
+2021-11-13 15:25:07.319  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:25:09.031  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:25:10.730  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@101a6583, org.uhc.dao.dto.BorrowerInfoDto@6327c13b]
+2021-11-13 15:25:11.297  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:25:12.429  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:25:14.127  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@566144ab, org.uhc.dao.dto.BorrowerInfoDto@158f5bf6]
+2021-11-13 15:25:14.980  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:25:16.423  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:25:18.123  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@567a12b9, org.uhc.dao.dto.BorrowerInfoDto@b893f54]
+2021-11-13 15:25:18.976  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:25:20.680  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:25:22.386  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@382ec76d, org.uhc.dao.dto.BorrowerInfoDto@3ec7e50b]
+2021-11-13 15:25:23.275  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 15:25:24.695  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 15:25:26.694  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2370e66c, org.uhc.dao.dto.BorrowerInfoDto@7db62822]
+2021-11-13 16:47:17.883  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 15320 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-11-13 16:47:17.886  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-11-13 16:47:17.909  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 16:47:17 IST 2021]; root of context hierarchy
+2021-11-13 16:47:18.024  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-11-13 16:47:19.114  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-11-13 16:47:19.127  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-11-13 16:47:19.127  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-11-13 16:47:19.211  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-11-13 16:47:19.211  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1304 ms
+2021-11-13 16:47:19.318  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-11-13 16:47:19.318  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-13 16:47:19.318  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-13 16:47:19.318  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-11-13 16:47:19.318  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-13 16:47:19.319  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-13 16:47:19.319  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-11-13 16:47:19.684  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: f435bf05-8d39-4e16-8d96-bdc2ccfc7f22
+
+2021-11-13 16:47:19.778  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@664e5dee, org.springframework.security.web.context.SecurityContextPersistenceFilter@7063686f, org.springframework.security.web.header.HeaderWriterFilter@4315e9af, org.springframework.security.web.authentication.logout.LogoutFilter@72d0f2b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76f856a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3491e86e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@431f1eaf, org.springframework.security.web.session.SessionManagementFilter@4f966719, org.springframework.security.web.access.ExceptionTranslationFilter@69e05f61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6107165]
+2021-11-13 16:47:19.916  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 16:47:17 IST 2021]; root of context hierarchy
+2021-11-13 16:47:19.963  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-11-13 16:47:19.964  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-11-13 16:47:19.965  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-11-13 16:47:19.966  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:19.966  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:19.967  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:19.967  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:19.967  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:19.968  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-11-13 16:47:19.968  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-11-13 16:47:19.969  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-11-13 16:47:19.972  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-11-13 16:47:19.972  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-11-13 16:47:19.972  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-11-13 16:47:19.973  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-11-13 16:47:19.973  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-11-13 16:47:19.973  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-11-13 16:47:19.974  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-11-13 16:47:19.975  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-11-13 16:47:19.976  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-11-13 16:47:19.976  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-11-13 16:47:19.977  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-11-13 16:47:19.977  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-11-13 16:47:19.978  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-11-13 16:47:19.978  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-11-13 16:47:19.979  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-11-13 16:47:19.980  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-11-13 16:47:19.998  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 16:47:19.998  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 16:47:20.023  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 16:47:20.123  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-11-13 16:47:20.134  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-13 16:47:20.142  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-13 16:47:20.149 ERROR chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.uhc.PhonePayAPIApplication.main(PhonePayAPIApplication.java:13)
+2021-11-13 16:47:20.150 ERROR chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at org.uhc.PhonePayAPIApplication.main(PhonePayAPIApplication.java:13)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 more
+2021-11-13 16:47:20.155  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Pausing ProtocolHandler ["http-nio-8080"]
+2021-11-13 16:47:20.156  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2021-11-13 16:47:20.174  INFO chetuiwk0165 --- [           main] o.a.c.u.LifecycleBase                    : The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2021-11-13 16:47:20.175  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Stopping ProtocolHandler ["http-nio-8080"]
+2021-11-13 16:47:20.175  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Destroying ProtocolHandler ["http-nio-8080"]
+2021-11-13 16:47:20.178  INFO chetuiwk0165 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2021-11-13 16:47:20.181 ERROR chetuiwk0165 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2021-11-13 16:47:20.182  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 16:47:17 IST 2021]; root of context hierarchy
+2021-11-13 16:47:20.182  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-11-13 16:47:34.547  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 21768 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-11-13 16:47:34.549  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-11-13 16:47:34.574  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 16:47:34 IST 2021]; root of context hierarchy
+2021-11-13 16:47:34.693  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-11-13 16:47:35.664  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-11-13 16:47:35.674  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-11-13 16:47:35.675  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-11-13 16:47:35.754  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-11-13 16:47:35.760  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1187 ms
+2021-11-13 16:47:35.865  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-11-13 16:47:35.866  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-13 16:47:35.866  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-13 16:47:35.866  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-11-13 16:47:35.866  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-13 16:47:35.867  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-13 16:47:35.867  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-11-13 16:47:36.213  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 05ea9939-1f16-417b-b226-dd13076ed521
+
+2021-11-13 16:47:36.298  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@664e5dee, org.springframework.security.web.context.SecurityContextPersistenceFilter@7063686f, org.springframework.security.web.header.HeaderWriterFilter@4315e9af, org.springframework.security.web.authentication.logout.LogoutFilter@72d0f2b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76f856a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3491e86e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@431f1eaf, org.springframework.security.web.session.SessionManagementFilter@4f966719, org.springframework.security.web.access.ExceptionTranslationFilter@69e05f61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6107165]
+2021-11-13 16:47:36.438  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 16:47:34 IST 2021]; root of context hierarchy
+2021-11-13 16:47:36.480  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-11-13 16:47:36.481  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-11-13 16:47:36.482  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-11-13 16:47:36.483  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:36.483  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:36.483  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:36.483  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:36.484  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 16:47:36.484  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-11-13 16:47:36.484  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-11-13 16:47:36.485  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-11-13 16:47:36.487  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-11-13 16:47:36.487  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-11-13 16:47:36.487  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-11-13 16:47:36.488  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-11-13 16:47:36.488  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-11-13 16:47:36.488  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-11-13 16:47:36.489  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-11-13 16:47:36.490  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-11-13 16:47:36.490  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-11-13 16:47:36.491  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-11-13 16:47:36.491  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-11-13 16:47:36.491  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-11-13 16:47:36.492  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-11-13 16:47:36.492  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-11-13 16:47:36.493  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-11-13 16:47:36.493  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-11-13 16:47:36.508  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 16:47:36.508  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 16:47:36.529  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 16:47:36.611  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-11-13 16:47:36.625  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-13 16:47:36.633  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-13 16:47:36.650  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-11-13 16:47:36.661  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-11-13 16:47:36.663  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 2.257 seconds (JVM running for 2.788)
+2021-11-13 16:48:04.966  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-11-13 16:48:04.966  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-11-13 16:48:04.977  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2021-11-13 16:48:05.034  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@78ffbe35
+2021-11-13 16:48:22.129  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:48:23.871  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:48:58.564  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@252f5522, org.uhc.dao.dto.BorrowerInfoDto@674d3ff4]
+2021-11-13 16:48:59.144  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:01.455  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:03.192  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3aabb534, org.uhc.dao.dto.BorrowerInfoDto@79d4df61]
+2021-11-13 16:49:03.791  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:06.455  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:08.196  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@169ff7db, org.uhc.dao.dto.BorrowerInfoDto@1b83208a]
+2021-11-13 16:49:09.292  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:11.049  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:12.777  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7ce624db, org.uhc.dao.dto.BorrowerInfoDto@2396c3f1]
+2021-11-13 16:49:13.354  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:15.078  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:16.805  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5d602ea, org.uhc.dao.dto.BorrowerInfoDto@104ad0ea]
+2021-11-13 16:49:17.380  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:18.816  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:20.551  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2c63b6f5, org.uhc.dao.dto.BorrowerInfoDto@3d974128]
+2021-11-13 16:49:21.131  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:22.859  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:24.595  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@863d522, org.uhc.dao.dto.BorrowerInfoDto@4e689944]
+2021-11-13 16:49:25.170  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:26.604  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:28.332  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7f0d4a62, org.uhc.dao.dto.BorrowerInfoDto@7814daaa]
+2021-11-13 16:49:28.622  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:30.371  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:32.107  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6ec8ca4f, org.uhc.dao.dto.BorrowerInfoDto@64e0cc6b]
+2021-11-13 16:49:32.395  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:34.135  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:37.181  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@71abc4cf, org.uhc.dao.dto.BorrowerInfoDto@2f3481da]
+2021-11-13 16:49:38.353  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:41.961  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:45.267  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@706acc1, org.uhc.dao.dto.BorrowerInfoDto@65e7abde]
+2021-11-13 16:49:46.986  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:48.725  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:50.472  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4a458611, org.uhc.dao.dto.BorrowerInfoDto@41f4f4d2]
+2021-11-13 16:49:51.050  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:52.776  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:54.507  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@73263889, org.uhc.dao.dto.BorrowerInfoDto@2b47c468]
+2021-11-13 16:49:55.083  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:49:56.238  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:49:57.976  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4dd4ba1f, org.uhc.dao.dto.BorrowerInfoDto@2b609513]
+2021-11-13 16:49:59.378  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:50:01.902  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:50:03.636  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@69400286, org.uhc.dao.dto.BorrowerInfoDto@7c31ff42]
+2021-11-13 16:50:04.217  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:50:07.237  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:50:09.252  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@145da699, org.uhc.dao.dto.BorrowerInfoDto@3bba710c]
+2021-11-13 16:50:10.142  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:50:11.624  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:50:13.398  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@520700cf, org.uhc.dao.dto.BorrowerInfoDto@21bf2e22]
+2021-11-13 16:50:14.273  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:50:16.004  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:50:17.730  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@30f505ea, org.uhc.dao.dto.BorrowerInfoDto@5a9e7a43]
+2021-11-13 16:50:18.596  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 16:50:20.033  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 16:50:21.757  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5488ada0, org.uhc.dao.dto.BorrowerInfoDto@3c6dd6cf]
+2021-11-13 20:09:39.680  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 27720 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-11-13 20:09:39.683  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-11-13 20:09:39.710  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 20:09:39 IST 2021]; root of context hierarchy
+2021-11-13 20:09:39.838  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-11-13 20:09:41.108  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-11-13 20:09:41.119  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-11-13 20:09:41.119  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-11-13 20:09:41.206  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-11-13 20:09:41.207  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1498 ms
+2021-11-13 20:09:41.312  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-11-13 20:09:41.312  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-13 20:09:41.313  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-13 20:09:41.313  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-11-13 20:09:41.313  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-13 20:09:41.314  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-13 20:09:41.314  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-11-13 20:09:41.672  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: cf74041a-23f4-49e9-a0e4-11208be6dd55
+
+2021-11-13 20:09:41.761  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ea04618, org.springframework.security.web.context.SecurityContextPersistenceFilter@243f003c, org.springframework.security.web.header.HeaderWriterFilter@58a2b4c, org.springframework.security.web.authentication.logout.LogoutFilter@45d64d27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1639f93a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f780a86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6dd82486, org.springframework.security.web.session.SessionManagementFilter@7c853486, org.springframework.security.web.access.ExceptionTranslationFilter@42210be1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6009bea]
+2021-11-13 20:09:42.037  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Sat Nov 13 20:09:39 IST 2021]; root of context hierarchy
+2021-11-13 20:09:42.604  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-11-13 20:09:42.606  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-11-13 20:09:42.606  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-11-13 20:09:42.607  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 20:09:42.607  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 20:09:42.607  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 20:09:42.608  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 20:09:42.608  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-11-13 20:09:42.608  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-11-13 20:09:42.609  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-11-13 20:09:42.609  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-11-13 20:09:42.611  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-11-13 20:09:42.612  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-11-13 20:09:42.612  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-11-13 20:09:42.612  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-11-13 20:09:42.613  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-11-13 20:09:42.613  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-11-13 20:09:42.613  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-11-13 20:09:42.615  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-11-13 20:09:42.615  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-11-13 20:09:42.615  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-11-13 20:09:42.616  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-11-13 20:09:42.616  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-11-13 20:09:42.617  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-11-13 20:09:42.617  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-11-13 20:09:42.618  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-11-13 20:09:42.618  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-11-13 20:09:42.688  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 20:09:42.688  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 20:09:42.913  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-11-13 20:09:43.286  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-11-13 20:09:43.327  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-13 20:09:43.367  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-13 20:09:43.387  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-11-13 20:09:43.396  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-11-13 20:09:43.399  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 3.862 seconds (JVM running for 4.579)
+2021-11-13 20:10:10.306  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-11-13 20:10:10.307  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-11-13 20:10:10.319  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2021-11-13 20:10:10.377  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@323c45dc
+2021-11-13 20:10:10.445 ERROR chetuiwk0165 --- [nio-8080-exec-1] o.a.t.j.p.ConnectionPool                 : Unable to create initial connections of pool.
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:272)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215)
+	at org.postgresql.Driver.makeConnection(Driver.java:404)
+	at org.postgresql.Driver.connect(Driver.java:272)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:716)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:726)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:776)
+	at org.uhc.dao.impl.UserDaoImpl.getPaymentBatchDetailsBetweenTwoDates(UserDaoImpl.java:1488)
+	at org.uhc.dao.impl.UserDaoImpl$$FastClassBySpringCGLIB$$6d12313d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at org.uhc.dao.impl.UserDaoImpl$$EnhancerBySpringCGLIB$$81485ddb.getPaymentBatchDetailsBetweenTwoDates(<generated>)
+	at org.uhc.service.impl.GetStatisticDetailsServiceImpl.getStatisticDetails(GetStatisticDetailsServiceImpl.java:44)
+	at org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(GetStatisticDetailsController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.uhc.config.CORSFilter.doFilter(CORSFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.UnknownHostException: nebo.uthc.local
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 118 more
+2021-11-13 20:10:10.447 ERROR chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : could not get payment batch info because of exception 
+org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:716)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:726)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:776)
+	at org.uhc.dao.impl.UserDaoImpl.getPaymentBatchDetailsBetweenTwoDates(UserDaoImpl.java:1488)
+	at org.uhc.dao.impl.UserDaoImpl$$FastClassBySpringCGLIB$$6d12313d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at org.uhc.dao.impl.UserDaoImpl$$EnhancerBySpringCGLIB$$81485ddb.getPaymentBatchDetailsBetweenTwoDates(<generated>)
+	at org.uhc.service.impl.GetStatisticDetailsServiceImpl.getStatisticDetails(GetStatisticDetailsServiceImpl.java:44)
+	at org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(GetStatisticDetailsController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.uhc.config.CORSFilter.doFilter(CORSFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:272)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215)
+	at org.postgresql.Driver.makeConnection(Driver.java:404)
+	at org.postgresql.Driver.connect(Driver.java:272)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 103 more
+Caused by: java.net.UnknownHostException: nebo.uthc.local
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 118 more
+2021-11-13 20:10:23.097  INFO chetuiwk0165 --- [nio-8080-exec-3] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@b78cdb3
+2021-11-13 20:10:23.101 ERROR chetuiwk0165 --- [nio-8080-exec-3] o.a.t.j.p.ConnectionPool                 : Unable to create initial connections of pool.
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:272)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215)
+	at org.postgresql.Driver.makeConnection(Driver.java:404)
+	at org.postgresql.Driver.connect(Driver.java:272)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:716)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:726)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:776)
+	at org.uhc.dao.impl.UserDaoImpl.getPaymentBatchDetailsBetweenTwoDates(UserDaoImpl.java:1488)
+	at org.uhc.dao.impl.UserDaoImpl$$FastClassBySpringCGLIB$$6d12313d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at org.uhc.dao.impl.UserDaoImpl$$EnhancerBySpringCGLIB$$81485ddb.getPaymentBatchDetailsBetweenTwoDates(<generated>)
+	at org.uhc.service.impl.GetStatisticDetailsServiceImpl.getStatisticDetails(GetStatisticDetailsServiceImpl.java:44)
+	at org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(GetStatisticDetailsController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.uhc.config.CORSFilter.doFilter(CORSFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.UnknownHostException: nebo.uthc.local
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 118 more
+2021-11-13 20:10:23.102 ERROR chetuiwk0165 --- [nio-8080-exec-3] o.u.d.i.UserDaoImpl                      : could not get payment batch info because of exception 
+org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:619)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:684)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:716)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:726)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:776)
+	at org.uhc.dao.impl.UserDaoImpl.getPaymentBatchDetailsBetweenTwoDates(UserDaoImpl.java:1488)
+	at org.uhc.dao.impl.UserDaoImpl$$FastClassBySpringCGLIB$$6d12313d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at org.uhc.dao.impl.UserDaoImpl$$EnhancerBySpringCGLIB$$81485ddb.getPaymentBatchDetailsBetweenTwoDates(<generated>)
+	at org.uhc.service.impl.GetStatisticDetailsServiceImpl.getStatisticDetails(GetStatisticDetailsServiceImpl.java:44)
+	at org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(GetStatisticDetailsController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.uhc.config.CORSFilter.doFilter(CORSFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:272)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:215)
+	at org.postgresql.Driver.makeConnection(Driver.java:404)
+	at org.postgresql.Driver.connect(Driver.java:272)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 103 more
+Caused by: java.net.UnknownHostException: nebo.uthc.local
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:61)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 118 more
+2021-11-13 20:11:12.899  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@1f616ea7
+2021-11-13 20:11:25.948  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:11:27.674  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:11:59.440  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3a35f1c9, org.uhc.dao.dto.BorrowerInfoDto@88e7696]
+2021-11-13 20:12:00.015  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:02.317  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:04.049  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4208ed53, org.uhc.dao.dto.BorrowerInfoDto@50180b92]
+2021-11-13 20:12:04.626  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:06.926  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:08.648  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@77b91fda, org.uhc.dao.dto.BorrowerInfoDto@26991ea]
+2021-11-13 20:12:09.226  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:10.950  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:12.673  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@78e8681, org.uhc.dao.dto.BorrowerInfoDto@175a4979]
+2021-11-13 20:12:13.253  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:14.974  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:16.698  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1543d976, org.uhc.dao.dto.BorrowerInfoDto@50974b26]
+2021-11-13 20:12:17.273  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:18.711  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:20.435  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6e971448, org.uhc.dao.dto.BorrowerInfoDto@5fa1af13]
+2021-11-13 20:12:21.016  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:22.737  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:24.458  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@542255f8, org.uhc.dao.dto.BorrowerInfoDto@3e86fa21]
+2021-11-13 20:12:25.036  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:26.472  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:28.194  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@68658ced, org.uhc.dao.dto.BorrowerInfoDto@3a6e6fc5]
+2021-11-13 20:12:28.483  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:30.206  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:31.926  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7c2560e5, org.uhc.dao.dto.BorrowerInfoDto@75fbcab2]
+2021-11-13 20:12:32.214  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:33.361  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:35.082  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@31bd3204, org.uhc.dao.dto.BorrowerInfoDto@786473b1]
+2021-11-13 20:12:35.948  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:37.668  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:39.387  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2f111610, org.uhc.dao.dto.BorrowerInfoDto@494e71a]
+2021-11-13 20:12:39.961  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:41.107  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:42.827  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5ce1d89e, org.uhc.dao.dto.BorrowerInfoDto@743d148]
+2021-11-13 20:12:43.406  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:45.132  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:46.855  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2045e626, org.uhc.dao.dto.BorrowerInfoDto@34a6903]
+2021-11-13 20:12:47.432  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:48.579  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:50.302  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@513d64dc, org.uhc.dao.dto.BorrowerInfoDto@48ed3622]
+2021-11-13 20:12:51.170  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:52.894  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:54.615  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@47169dcf, org.uhc.dao.dto.BorrowerInfoDto@1744f65f]
+2021-11-13 20:12:55.190  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:12:56.341  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:12:58.062  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2de57bef, org.uhc.dao.dto.BorrowerInfoDto@c980457]
+2021-11-13 20:12:58.928  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:13:00.364  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:13:02.087  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7f1318ee, org.uhc.dao.dto.BorrowerInfoDto@4f55ef5d]
+2021-11-13 20:13:02.954  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:13:04.680  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:13:06.403  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@51fd09d, org.uhc.dao.dto.BorrowerInfoDto@622c6cb8]
+2021-11-13 20:13:07.269  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 20:13:08.706  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 20:13:10.438  INFO chetuiwk0165 --- [nio-8080-exec-4] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6761dc56, org.uhc.dao.dto.BorrowerInfoDto@584c2669]
+2021-11-13 21:03:38.548  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@4f7743c1
+2021-11-13 21:03:39.722  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:03:41.419  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:03:43.126  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5d3cec90, org.uhc.dao.dto.BorrowerInfoDto@373b1415]
+2021-11-13 21:03:43.693  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:03:45.991  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:03:47.701  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@cb51aa4, org.uhc.dao.dto.BorrowerInfoDto@79a939b8]
+2021-11-13 21:03:48.268  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:03:50.534  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:03:52.227  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@434b0271, org.uhc.dao.dto.BorrowerInfoDto@2c3f3db1]
+2021-11-13 21:03:52.792  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:03:54.485  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:03:56.179  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@8fb62a8, org.uhc.dao.dto.BorrowerInfoDto@38afeef6]
+2021-11-13 21:03:56.747  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:03:58.445  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:00.144  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@236c2b18, org.uhc.dao.dto.BorrowerInfoDto@766b4871]
+2021-11-13 21:04:00.712  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:02.170  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:03.911  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@25d69a36, org.uhc.dao.dto.BorrowerInfoDto@62c90824]
+2021-11-13 21:04:04.492  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:06.230  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:07.925  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@20bfdb8e, org.uhc.dao.dto.BorrowerInfoDto@c3b3728]
+2021-11-13 21:04:08.494  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:09.911  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:11.611  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1d2d0bb3, org.uhc.dao.dto.BorrowerInfoDto@378fb81a]
+2021-11-13 21:04:11.896  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:13.596  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:15.295  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@693266ce, org.uhc.dao.dto.BorrowerInfoDto@3ce59eb7]
+2021-11-13 21:04:15.580  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:16.727  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:18.425  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@49607a0b, org.uhc.dao.dto.BorrowerInfoDto@3e54455]
+2021-11-13 21:04:19.280  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:20.977  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:22.675  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@791b56f1, org.uhc.dao.dto.BorrowerInfoDto@691b7f43]
+2021-11-13 21:04:23.243  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:24.375  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:26.075  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2361f049, org.uhc.dao.dto.BorrowerInfoDto@a8fdf9c]
+2021-11-13 21:04:26.654  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:28.386  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:30.084  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2900ace2, org.uhc.dao.dto.BorrowerInfoDto@1bd32fe6]
+2021-11-13 21:04:30.652  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:31.785  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:33.482  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@371c776d, org.uhc.dao.dto.BorrowerInfoDto@431b3d2d]
+2021-11-13 21:04:34.336  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:36.037  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:37.733  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6f50ee10, org.uhc.dao.dto.BorrowerInfoDto@6d7e5003]
+2021-11-13 21:04:38.302  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:39.435  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:41.135  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@390df5de, org.uhc.dao.dto.BorrowerInfoDto@23655587]
+2021-11-13 21:04:41.989  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:43.406  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:45.102  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4bad0f95, org.uhc.dao.dto.BorrowerInfoDto@544cb0ab]
+2021-11-13 21:04:45.954  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:47.653  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:49.350  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2b91cf9, org.uhc.dao.dto.BorrowerInfoDto@bf9b844]
+2021-11-13 21:04:50.201  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-11-13 21:04:51.616  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-11-13 21:04:53.310  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@280bdf09, org.uhc.dao.dto.BorrowerInfoDto@19f3eb4b]

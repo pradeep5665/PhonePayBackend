@@ -1,0 +1,1036 @@
+2021-09-22 14:50:59.560  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 17544 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-09-22 14:50:59.571  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-09-22 14:50:59.598  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Wed Sep 22 14:50:59 IST 2021]; root of context hierarchy
+2021-09-22 14:50:59.704  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-09-22 14:51:00.785  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-09-22 14:51:00.796  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-09-22 14:51:00.797  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-09-22 14:51:00.882  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-09-22 14:51:00.883  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1287 ms
+2021-09-22 14:51:00.992  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-09-22 14:51:00.992  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-09-22 14:51:00.992  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-09-22 14:51:00.992  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-09-22 14:51:00.992  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-09-22 14:51:00.993  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-09-22 14:51:00.993  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-09-22 14:51:01.335  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: f96c32af-0d12-41ac-a9d9-b6cf881bad7b
+
+2021-09-22 14:51:01.423  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55e3d6c3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dff6d05, org.springframework.security.web.header.HeaderWriterFilter@34819867, org.springframework.security.web.authentication.logout.LogoutFilter@783115d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34fe326d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bae64d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30e6a763, org.springframework.security.web.session.SessionManagementFilter@1da4b6b3, org.springframework.security.web.access.ExceptionTranslationFilter@53dad875, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fad6218]
+2021-09-22 14:51:01.569  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Wed Sep 22 14:50:59 IST 2021]; root of context hierarchy
+2021-09-22 14:51:01.614  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-09-22 14:51:01.618  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-09-22 14:51:01.618  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-09-22 14:51:01.619  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 14:51:01.619  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 14:51:01.620  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 14:51:01.620  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 14:51:01.620  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 14:51:01.621  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-09-22 14:51:01.621  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-09-22 14:51:01.621  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-09-22 14:51:01.624  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-09-22 14:51:01.625  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-09-22 14:51:01.625  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-09-22 14:51:01.626  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-09-22 14:51:01.626  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-09-22 14:51:01.626  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-09-22 14:51:01.627  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-09-22 14:51:01.629  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-09-22 14:51:01.629  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-09-22 14:51:01.630  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-09-22 14:51:01.630  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-09-22 14:51:01.631  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-09-22 14:51:01.631  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-09-22 14:51:01.631  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-09-22 14:51:01.633  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-09-22 14:51:01.633  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-09-22 14:51:01.650  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-22 14:51:01.651  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-22 14:51:01.676  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-22 14:51:01.774  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-09-22 14:51:01.787  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 14:51:01.794  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 14:51:01.803  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-09-22 14:51:01.859  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-09-22 14:51:01.862  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 2.446 seconds (JVM running for 2.958)
+2021-09-22 15:46:16.906  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-09-22 15:46:16.908  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-09-22 15:46:16.938  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2021-09-22 15:46:16.987  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.PaymentAdviceController            : allPaymentAdviceAPI advice API called
+2021-09-22 15:46:16.989  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.AllPaymentAdviceServiceImpl      : Entering into getAllPaymentAdviceDetails method
+2021-09-22 15:46:37.981  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan Account List: Got payment advice details successfully 
+2021-09-22 15:46:37.981  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 15:47:34.611  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3a121f24, org.uhc.dao.dto.BorrowerInfoDto@6c82016]
+2021-09-22 15:47:35.067  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 15:47:37.678  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 15:47:42.352  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@205ee732, org.uhc.dao.dto.BorrowerInfoDto@631bde26]
+2021-09-22 15:47:42.764  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 17:44:45.445  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.c.PaymentsInProcessController        : get payments in process API called
+2021-09-22 17:44:45.448  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.PaymentsInProcessServiceImpl     : Entering into getPaymentsInProcessList method
+2021-09-22 17:45:19.933  INFO chetuiwk0165 --- [nio-8080-exec-5] o.s.b.f.x.XmlBeanDefinitionReader        : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2021-09-22 17:45:20.030  INFO chetuiwk0165 --- [nio-8080-exec-5] o.s.j.s.SQLErrorCodesFactory             : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2021-09-22 17:45:20.031  WARN chetuiwk0165 --- [nio-8080-exec-5] o.s.j.s.SQLErrorCodesFactory             : Error while extracting database name - falling back to empty error codes
+org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: This connection has been closed.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:342)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.jdbc.support.SQLErrorCodesFactory.getErrorCodes(SQLErrorCodesFactory.java:212)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.setDataSource(SQLErrorCodeSQLExceptionTranslator.java:134)
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.<init>(SQLErrorCodeSQLExceptionTranslator.java:97)
+	at org.springframework.jdbc.support.JdbcAccessor.getExceptionTranslator(JdbcAccessor.java:99)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:419)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:474)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:484)
+	at org.uhc.dao.impl.UserDaoImpl.getPaymentsInProcessList(UserDaoImpl.java:1175)
+	at org.uhc.dao.impl.UserDaoImpl$$FastClassBySpringCGLIB$$6d12313d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at org.uhc.dao.impl.UserDaoImpl$$EnhancerBySpringCGLIB$$b65293ca.getPaymentsInProcessList(<generated>)
+	at org.uhc.service.impl.PaymentsInProcessServiceImpl.getPaymentsInProcessList(PaymentsInProcessServiceImpl.java:44)
+	at org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI(PaymentsInProcessController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.uhc.config.CORSFilter.doFilter(CORSFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:803)
+	at org.postgresql.jdbc.PgConnection.getMetaData(PgConnection.java:1268)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.ProxyConnection.invoke(ProxyConnection.java:126)
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:108)
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:79)
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:108)
+	at org.apache.tomcat.jdbc.pool.DisposableConnectionFacade.invoke(DisposableConnectionFacade.java:81)
+	at com.sun.proxy.$Proxy82.getMetaData(Unknown Source)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:331)
+	... 106 more
+2021-09-22 17:45:20.041 ERROR chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exception occured while Finding the List of payment  advice details 
+org.springframework.dao.DataAccessResourceFailureException: StatementCallback; SQL [SELECT SCP.ID, SCP.LOAN_NUMBER, SCP.DATE_CREATED, SCP.PAYOR_NAME, SCP.PAYOR_TYPE, SCP.ENTERED_BY, SCP.DATE_CANCELED, ADV.PAYMENT_ID, ADV.COMPLETED FROM PAYMENT AS SCP LEFT JOIN ADVICE AS ADV ON ADV.PAYMENT_ID = SCP.ID where (SCP.date_canceled is null and SCP.date_processed is null)or (SCP.date_processed is not null and ADV.completed = false)or (SCP.date_canceled is not null and ADV.completed = true and ADV.removed_from_bk = false ) ORDER BY SCP.LOAN_NUMBER]; An I/O error occurred while sending to the backend.; nested exception is org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:105)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:419)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:474)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:484)
+	at org.uhc.dao.impl.UserDaoImpl.getPaymentsInProcessList(UserDaoImpl.java:1175)
+	at org.uhc.dao.impl.UserDaoImpl$$FastClassBySpringCGLIB$$6d12313d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at org.uhc.dao.impl.UserDaoImpl$$EnhancerBySpringCGLIB$$b65293ca.getPaymentsInProcessList(<generated>)
+	at org.uhc.service.impl.PaymentsInProcessServiceImpl.getPaymentsInProcessList(PaymentsInProcessServiceImpl.java:44)
+	at org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI(PaymentsInProcessController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.uhc.config.CORSFilter.doFilter(CORSFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:314)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:430)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:289)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:266)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:233)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy83.executeQuery(Unknown Source)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:458)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:408)
+	... 100 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:140)
+	at org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:109)
+	at org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:67)
+	at org.postgresql.core.PGStream.receiveChar(PGStream.java:280)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1916)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:288)
+	... 114 more
+2021-09-22 17:45:20.047  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.PaymentsInProcessServiceImpl     : Exit from getPaymentsInProcessList method
+2021-09-22 17:45:42.776  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 20316 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-09-22 17:45:42.779  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-09-22 17:45:42.805  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Wed Sep 22 17:45:42 IST 2021]; root of context hierarchy
+2021-09-22 17:45:42.923  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-09-22 17:45:44.005  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-09-22 17:45:44.016  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-09-22 17:45:44.017  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-09-22 17:45:44.111  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-09-22 17:45:44.111  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1308 ms
+2021-09-22 17:45:44.232  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-09-22 17:45:44.232  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-09-22 17:45:44.232  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-09-22 17:45:44.233  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-09-22 17:45:44.233  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-09-22 17:45:44.234  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-09-22 17:45:44.234  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-09-22 17:45:45.026  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 6ac4f70f-b56e-49a5-a4ec-263020629216
+
+2021-09-22 17:45:45.470  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36fcf6c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@68f32020, org.springframework.security.web.header.HeaderWriterFilter@4ca8dbfa, org.springframework.security.web.authentication.logout.LogoutFilter@41fed14f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b047fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34819867, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1aac188d, org.springframework.security.web.session.SessionManagementFilter@71cb3139, org.springframework.security.web.access.ExceptionTranslationFilter@dab48d3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ab4ba9f]
+2021-09-22 17:45:45.614  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Wed Sep 22 17:45:42 IST 2021]; root of context hierarchy
+2021-09-22 17:45:45.655  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-09-22 17:45:45.656  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-09-22 17:45:45.657  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-09-22 17:45:45.658  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 17:45:45.658  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 17:45:45.658  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 17:45:45.658  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 17:45:45.659  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-09-22 17:45:45.659  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-09-22 17:45:45.659  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-09-22 17:45:45.660  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-09-22 17:45:45.662  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-09-22 17:45:45.662  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-09-22 17:45:45.662  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-09-22 17:45:45.663  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-09-22 17:45:45.663  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-09-22 17:45:45.663  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-09-22 17:45:45.664  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-09-22 17:45:45.666  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-09-22 17:45:45.667  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-09-22 17:45:45.667  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-09-22 17:45:45.668  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-09-22 17:45:45.668  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-09-22 17:45:45.669  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-09-22 17:45:45.669  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-09-22 17:45:45.670  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-09-22 17:45:45.670  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-09-22 17:45:45.685  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-22 17:45:45.685  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-22 17:45:45.708  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-22 17:45:45.803  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-09-22 17:45:45.814  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-09-22 17:45:45.822  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-09-22 17:45:45.839  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-09-22 17:45:45.850  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-09-22 17:45:45.852  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 3.219 seconds (JVM running for 3.732)
+2021-09-22 20:18:13.778  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-09-22 20:18:13.786  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-09-22 20:18:13.862  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 76 ms
+2021-09-22 20:18:14.017  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.c.GetStatisticDetailsController      : getStatisticDetails API called: org.uhc.envelop.request.GetStatisticDetailsRequest@2aae1af1
+2021-09-22 20:18:35.633  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:18:38.486  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:19.124  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@27651274, org.uhc.dao.dto.BorrowerInfoDto@69ef9354]
+2021-09-22 20:19:19.880  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:21.294  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:23.256  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7cf63c7, org.uhc.dao.dto.BorrowerInfoDto@6a25bd21]
+2021-09-22 20:19:23.882  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:25.817  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:28.249  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@65613776, org.uhc.dao.dto.BorrowerInfoDto@84f6af8]
+2021-09-22 20:19:29.151  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:30.728  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:32.951  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7462f16d, org.uhc.dao.dto.BorrowerInfoDto@33e98675]
+2021-09-22 20:19:33.916  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:36.402  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:38.985  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4fbe0122, org.uhc.dao.dto.BorrowerInfoDto@301bfc8e]
+2021-09-22 20:19:39.761  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:41.503  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:43.466  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@110adf61, org.uhc.dao.dto.BorrowerInfoDto@1e13bfe4]
+2021-09-22 20:19:44.334  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:45.922  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:48.108  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@211b0a15, org.uhc.dao.dto.BorrowerInfoDto@4e0b7d34]
+2021-09-22 20:19:49.096  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:51.110  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:53.021  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@9bd4243, org.uhc.dao.dto.BorrowerInfoDto@a52200f]
+2021-09-22 20:19:53.963  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:19:55.518  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:19:57.423  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6697e967, org.uhc.dao.dto.BorrowerInfoDto@55b00ac]
+2021-09-22 20:19:58.931  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:01.050  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:03.441  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@61081950, org.uhc.dao.dto.BorrowerInfoDto@991527f]
+2021-09-22 20:20:04.089  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:06.069  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:07.978  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@107ae77d, org.uhc.dao.dto.BorrowerInfoDto@4d928e5e]
+2021-09-22 20:20:08.585  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:10.590  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:12.712  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6cf1dc25, org.uhc.dao.dto.BorrowerInfoDto@6f70696e]
+2021-09-22 20:20:13.637  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:16.195  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:18.744  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@28762af2, org.uhc.dao.dto.BorrowerInfoDto@714fb1dc]
+2021-09-22 20:20:19.770  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:22.356  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:24.722  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@133d4b24, org.uhc.dao.dto.BorrowerInfoDto@7fea7b34]
+2021-09-22 20:20:25.431  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:27.108  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:28.864  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6652ef81, org.uhc.dao.dto.BorrowerInfoDto@6a1f63c6]
+2021-09-22 20:20:29.435  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:31.364  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:33.246  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@130261ca, org.uhc.dao.dto.BorrowerInfoDto@3f1d8b45]
+2021-09-22 20:20:33.868  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:35.450  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:37.477  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4e4245c0, org.uhc.dao.dto.BorrowerInfoDto@5fd21e9d]
+2021-09-22 20:20:38.249  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:39.607  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:41.416  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5fde389c, org.uhc.dao.dto.BorrowerInfoDto@c4ac781]
+2021-09-22 20:20:42.021  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:44.476  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:46.189  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@507aef8d, org.uhc.dao.dto.BorrowerInfoDto@1f1335e9]
+2021-09-22 20:20:46.798  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:48.889  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:50.748  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3127f44f, org.uhc.dao.dto.BorrowerInfoDto@6b0b4b25]
+2021-09-22 20:20:51.372  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:53.412  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:20:55.433  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6c8ac74e, org.uhc.dao.dto.BorrowerInfoDto@6ab01b4b]
+2021-09-22 20:20:56.296  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:20:58.534  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:00.407  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@643b1fde, org.uhc.dao.dto.BorrowerInfoDto@5558221f]
+2021-09-22 20:21:01.080  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:03.233  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:05.033  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6f522f4d, org.uhc.dao.dto.BorrowerInfoDto@5d21baf]
+2021-09-22 20:21:05.638  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:07.809  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:09.684  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@39ab3124, org.uhc.dao.dto.BorrowerInfoDto@2d77b4d4]
+2021-09-22 20:21:10.399  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:12.841  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:14.958  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5321de70, org.uhc.dao.dto.BorrowerInfoDto@46bbb8d8]
+2021-09-22 20:21:15.697  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:18.092  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:19.987  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2679933a, org.uhc.dao.dto.BorrowerInfoDto@36385235]
+2021-09-22 20:21:20.769  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:23.165  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:25.226  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6bb7c8dc, org.uhc.dao.dto.BorrowerInfoDto@70d1d00a]
+2021-09-22 20:21:25.979  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:27.944  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:29.986  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1adb6d69, org.uhc.dao.dto.BorrowerInfoDto@6e063dfd]
+2021-09-22 20:21:30.635  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:32.306  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:34.193  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3ba2e9c9, org.uhc.dao.dto.BorrowerInfoDto@458d3f37]
+2021-09-22 20:21:34.889  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:36.675  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:38.530  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4fca2ca, org.uhc.dao.dto.BorrowerInfoDto@5b4a8e7d]
+2021-09-22 20:21:39.158  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:41.026  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:43.207  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@778ad87c, org.uhc.dao.dto.BorrowerInfoDto@5bd2353d]
+2021-09-22 20:21:43.877  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:45.384  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:47.506  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3a59367f, org.uhc.dao.dto.BorrowerInfoDto@35ef7e2f]
+2021-09-22 20:21:48.187  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:50.089  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:52.198  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@140709d6, org.uhc.dao.dto.BorrowerInfoDto@5e36bdb6]
+2021-09-22 20:21:52.998  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:21:55.528  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:21:57.579  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2daf82c1, org.uhc.dao.dto.BorrowerInfoDto@63ff8f5d]
+2021-09-22 20:21:58.200  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:00.086  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:02.055  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4f1a634d, org.uhc.dao.dto.BorrowerInfoDto@24aabc15]
+2021-09-22 20:22:02.724  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:04.496  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:06.298  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@75c28bcb, org.uhc.dao.dto.BorrowerInfoDto@6a587749]
+2021-09-22 20:22:06.901  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:08.684  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:10.473  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@76c46144, org.uhc.dao.dto.BorrowerInfoDto@7ff319d]
+2021-09-22 20:22:11.072  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:12.793  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:14.530  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@66827e7a, org.uhc.dao.dto.BorrowerInfoDto@4f49bfdc]
+2021-09-22 20:22:15.120  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:16.286  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:18.023  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1ad22930, org.uhc.dao.dto.BorrowerInfoDto@645f902e]
+2021-09-22 20:22:18.616  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:19.921  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:21.935  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@11db4371, org.uhc.dao.dto.BorrowerInfoDto@13eeb9c9]
+2021-09-22 20:22:22.626  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:24.005  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:26.165  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@187e892d, org.uhc.dao.dto.BorrowerInfoDto@38b4ec]
+2021-09-22 20:22:26.749  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:27.996  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:30.118  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4bb3af51, org.uhc.dao.dto.BorrowerInfoDto@2df5671f]
+2021-09-22 20:22:30.775  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:32.077  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:34.016  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@412ea46d, org.uhc.dao.dto.BorrowerInfoDto@4f4e770]
+2021-09-22 20:22:34.689  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:35.876  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:37.718  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@526b0998, org.uhc.dao.dto.BorrowerInfoDto@54a05155]
+2021-09-22 20:22:38.454  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:40.416  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:42.280  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@60999a60, org.uhc.dao.dto.BorrowerInfoDto@43f53e64]
+2021-09-22 20:22:42.874  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:44.740  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:46.845  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@49d8c84b, org.uhc.dao.dto.BorrowerInfoDto@1fa402dc]
+2021-09-22 20:22:47.668  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:49.908  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:52.198  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3342c1d2, org.uhc.dao.dto.BorrowerInfoDto@592edfc0]
+2021-09-22 20:22:53.156  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:54.682  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:22:57.081  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@56bbde3e, org.uhc.dao.dto.BorrowerInfoDto@69b684d7]
+2021-09-22 20:22:58.060  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:22:59.865  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:02.749  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4cdf8462, org.uhc.dao.dto.BorrowerInfoDto@632092e6]
+2021-09-22 20:23:03.651  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:05.558  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:08.330  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6be2ea92, org.uhc.dao.dto.BorrowerInfoDto@362f4b05]
+2021-09-22 20:23:09.133  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:10.523  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:12.331  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6e32536, org.uhc.dao.dto.BorrowerInfoDto@61b330ae]
+2021-09-22 20:23:12.970  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:14.170  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:16.231  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1d79e070, org.uhc.dao.dto.BorrowerInfoDto@5142e7b9]
+2021-09-22 20:23:17.055  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:18.625  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:20.889  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4e97a232, org.uhc.dao.dto.BorrowerInfoDto@36d9cd0e]
+2021-09-22 20:23:21.724  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:24.287  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:26.702  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@64f1c1c5, org.uhc.dao.dto.BorrowerInfoDto@22488dcd]
+2021-09-22 20:23:27.563  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:29.511  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:31.380  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@51bd3d84, org.uhc.dao.dto.BorrowerInfoDto@29743b00]
+2021-09-22 20:23:31.961  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:33.758  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:35.744  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@43e12802, org.uhc.dao.dto.BorrowerInfoDto@25a1e356]
+2021-09-22 20:23:36.414  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:38.642  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:40.563  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1d48ab7b, org.uhc.dao.dto.BorrowerInfoDto@156c2fe9]
+2021-09-22 20:23:41.253  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:42.513  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:44.589  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5f87b47e, org.uhc.dao.dto.BorrowerInfoDto@7516578b]
+2021-09-22 20:23:45.301  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:46.944  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:49.275  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2ddd3921, org.uhc.dao.dto.BorrowerInfoDto@59ba5814]
+2021-09-22 20:23:50.050  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:51.307  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:53.222  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3bfc2319, org.uhc.dao.dto.BorrowerInfoDto@7c9191e2]
+2021-09-22 20:23:53.879  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:55.104  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:23:56.853  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@38c1bb60, org.uhc.dao.dto.BorrowerInfoDto@33b03e94]
+2021-09-22 20:23:57.617  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:23:58.798  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:00.640  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@690e3710, org.uhc.dao.dto.BorrowerInfoDto@19e0a552]
+2021-09-22 20:24:01.250  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:02.494  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:04.213  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2ccf17b5, org.uhc.dao.dto.BorrowerInfoDto@1e39d826]
+2021-09-22 20:24:05.077  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:06.878  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:08.782  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@697da46, org.uhc.dao.dto.BorrowerInfoDto@1ac125f3]
+2021-09-22 20:24:09.401  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:10.573  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:12.329  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4e67fba1, org.uhc.dao.dto.BorrowerInfoDto@1e4fe2a3]
+2021-09-22 20:24:12.912  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:14.670  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:16.443  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@26b25ec6, org.uhc.dao.dto.BorrowerInfoDto@35cf095e]
+2021-09-22 20:24:17.030  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:18.334  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:20.207  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@440456b5, org.uhc.dao.dto.BorrowerInfoDto@25bfee6c]
+2021-09-22 20:24:21.183  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:23.030  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:24.815  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@114fc073, org.uhc.dao.dto.BorrowerInfoDto@5c07aefd]
+2021-09-22 20:24:25.416  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:26.947  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:28.816  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3a50ea36, org.uhc.dao.dto.BorrowerInfoDto@6046bf9e]
+2021-09-22 20:24:29.460  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:30.669  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:32.678  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@fe5a7bd, org.uhc.dao.dto.BorrowerInfoDto@6ef480fa]
+2021-09-22 20:24:33.439  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:35.517  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:37.497  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@53c8c648, org.uhc.dao.dto.BorrowerInfoDto@62729e0]
+2021-09-22 20:24:38.358  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:40.119  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:41.960  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@245daed6, org.uhc.dao.dto.BorrowerInfoDto@6ee409f7]
+2021-09-22 20:24:42.625  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:44.714  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:46.489  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7b8b78e5, org.uhc.dao.dto.BorrowerInfoDto@445c265d]
+2021-09-22 20:24:47.106  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:49.126  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:50.863  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@dbe1b1e, org.uhc.dao.dto.BorrowerInfoDto@435b10ef]
+2021-09-22 20:24:51.752  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:52.996  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:54.736  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@63b71431, org.uhc.dao.dto.BorrowerInfoDto@467cb8d4]
+2021-09-22 20:24:55.340  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:24:57.244  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:24:59.080  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3b672dee, org.uhc.dao.dto.BorrowerInfoDto@20a08e05]
+2021-09-22 20:24:59.839  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:01.641  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:03.597  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7b6d10bc, org.uhc.dao.dto.BorrowerInfoDto@58f4bd1d]
+2021-09-22 20:25:04.552  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:06.076  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:07.816  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5a7ee3b0, org.uhc.dao.dto.BorrowerInfoDto@7e0a8e5c]
+2021-09-22 20:25:08.886  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:10.532  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:12.503  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6df199d1, org.uhc.dao.dto.BorrowerInfoDto@1010dd27]
+2021-09-22 20:25:13.411  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:15.315  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:17.125  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3d5ecff6, org.uhc.dao.dto.BorrowerInfoDto@170cce6f]
+2021-09-22 20:25:17.785  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:19.231  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:20.999  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@76d2f24e, org.uhc.dao.dto.BorrowerInfoDto@603de056]
+2021-09-22 20:25:21.572  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:23.124  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:24.966  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2b57b2d8, org.uhc.dao.dto.BorrowerInfoDto@5ad97e6b]
+2021-09-22 20:25:25.851  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:27.741  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:29.556  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3b78a7fc, org.uhc.dao.dto.BorrowerInfoDto@34c8cf95]
+2021-09-22 20:25:30.218  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:31.437  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:33.207  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@229f6aa6, org.uhc.dao.dto.BorrowerInfoDto@33a462b8]
+2021-09-22 20:25:33.832  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:35.410  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:37.328  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4d1d6477, org.uhc.dao.dto.BorrowerInfoDto@3f5bae26]
+2021-09-22 20:25:38.292  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:39.876  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:41.855  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@66483931, org.uhc.dao.dto.BorrowerInfoDto@76e936e2]
+2021-09-22 20:25:42.545  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:44.535  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:46.276  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@50f1ca94, org.uhc.dao.dto.BorrowerInfoDto@32396432]
+2021-09-22 20:25:46.878  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:48.124  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:49.862  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@151f52f5, org.uhc.dao.dto.BorrowerInfoDto@2afe3892]
+2021-09-22 20:25:50.744  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:52.474  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:54.206  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7405f233, org.uhc.dao.dto.BorrowerInfoDto@de41075]
+2021-09-22 20:25:54.846  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:56.069  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:25:57.837  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@620373c6, org.uhc.dao.dto.BorrowerInfoDto@39e2fdbc]
+2021-09-22 20:25:58.411  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:25:59.874  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:01.656  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@622d04d9, org.uhc.dao.dto.BorrowerInfoDto@4fe7d751]
+2021-09-22 20:26:02.563  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:04.384  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:06.204  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@36831028, org.uhc.dao.dto.BorrowerInfoDto@18a20459]
+2021-09-22 20:26:06.777  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:07.940  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:09.723  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@12a3c058, org.uhc.dao.dto.BorrowerInfoDto@630fc002]
+2021-09-22 20:26:10.309  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:11.764  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:13.513  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4d238e1b, org.uhc.dao.dto.BorrowerInfoDto@45abdb2a]
+2021-09-22 20:26:14.377  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:16.139  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:17.884  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@490662c7, org.uhc.dao.dto.BorrowerInfoDto@5494a435]
+2021-09-22 20:26:18.485  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:19.690  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:21.533  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@516abea, org.uhc.dao.dto.BorrowerInfoDto@1eff42e9]
+2021-09-22 20:26:22.217  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:24.082  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:25.814  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@64150bab, org.uhc.dao.dto.BorrowerInfoDto@1551ae10]
+2021-09-22 20:26:26.813  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:28.421  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:30.371  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@25281eab, org.uhc.dao.dto.BorrowerInfoDto@4124f8ed]
+2021-09-22 20:26:31.413  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:32.985  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:34.771  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@d20fb31, org.uhc.dao.dto.BorrowerInfoDto@1599e5ab]
+2021-09-22 20:26:35.347  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:37.218  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:39.084  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@70217cf5, org.uhc.dao.dto.BorrowerInfoDto@1624018c]
+2021-09-22 20:26:39.698  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:40.933  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:42.876  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1c57990a, org.uhc.dao.dto.BorrowerInfoDto@46399396]
+2021-09-22 20:26:43.586  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:45.141  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:46.966  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3d849970, org.uhc.dao.dto.BorrowerInfoDto@b1ac72d]
+2021-09-22 20:26:47.895  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:49.671  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:51.424  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2b25908d, org.uhc.dao.dto.BorrowerInfoDto@218a035c]
+2021-09-22 20:26:52.004  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:53.148  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:54.880  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@385c4104, org.uhc.dao.dto.BorrowerInfoDto@65a2ca8d]
+2021-09-22 20:26:55.786  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:26:57.556  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:26:59.367  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@62848f4c, org.uhc.dao.dto.BorrowerInfoDto@13e5f0a3]
+2021-09-22 20:27:00.278  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:01.815  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:03.710  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@496bd7ba, org.uhc.dao.dto.BorrowerInfoDto@3a6e8ab8]
+2021-09-22 20:27:04.704  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:06.291  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:08.211  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7cd68c56, org.uhc.dao.dto.BorrowerInfoDto@400a1b87]
+2021-09-22 20:27:09.302  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:10.925  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:12.875  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@57cbc23b, org.uhc.dao.dto.BorrowerInfoDto@193eb930]
+2021-09-22 20:27:13.938  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:15.635  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:17.586  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@51c2227d, org.uhc.dao.dto.BorrowerInfoDto@4104cde1]
+2021-09-22 20:27:18.778  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:20.884  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:23.035  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@48d715e0, org.uhc.dao.dto.BorrowerInfoDto@244cc2f3]
+2021-09-22 20:27:24.092  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:26.039  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:28.260  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@645dcdcd, org.uhc.dao.dto.BorrowerInfoDto@3d16f62]
+2021-09-22 20:27:29.649  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:32.178  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:34.563  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@73d912ed, org.uhc.dao.dto.BorrowerInfoDto@31400d3f]
+2021-09-22 20:27:35.342  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:37.112  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:39.281  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3bf99d7f, org.uhc.dao.dto.BorrowerInfoDto@335b5f1d]
+2021-09-22 20:27:40.403  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:42.247  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:44.102  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@82e7de1, org.uhc.dao.dto.BorrowerInfoDto@3936b02e]
+2021-09-22 20:27:44.712  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:45.992  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:47.832  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4e53d012, org.uhc.dao.dto.BorrowerInfoDto@2799dd72]
+2021-09-22 20:27:48.773  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:50.670  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:52.444  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5ca37d15, org.uhc.dao.dto.BorrowerInfoDto@5018016f]
+2021-09-22 20:27:53.330  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:54.784  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:27:56.501  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@9b983e, org.uhc.dao.dto.BorrowerInfoDto@6980a712]
+2021-09-22 20:27:57.406  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:27:59.164  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:00.996  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2e8c34e2, org.uhc.dao.dto.BorrowerInfoDto@3e0f5b25]
+2021-09-22 20:28:01.578  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:02.733  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:04.506  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@62897eb2, org.uhc.dao.dto.BorrowerInfoDto@e5dfdc6]
+2021-09-22 20:28:05.473  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:07.256  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:09.008  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4139f3cb, org.uhc.dao.dto.BorrowerInfoDto@52b5eba]
+2021-09-22 20:28:09.608  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:10.825  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:12.660  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2c7edc43, org.uhc.dao.dto.BorrowerInfoDto@4d2cb7c7]
+2021-09-22 20:28:13.560  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:15.290  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:17.114  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4305b202, org.uhc.dao.dto.BorrowerInfoDto@1c04fa56]
+2021-09-22 20:28:17.691  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:18.845  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:20.609  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@46c2a151, org.uhc.dao.dto.BorrowerInfoDto@6e78b4c1]
+2021-09-22 20:28:21.483  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:23.250  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:25.016  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@38eae, org.uhc.dao.dto.BorrowerInfoDto@3bee02b2]
+2021-09-22 20:28:25.627  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:26.825  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:28.676  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6875f4b7, org.uhc.dao.dto.BorrowerInfoDto@43008bc4]
+2021-09-22 20:28:29.630  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:31.533  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:33.281  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5fea0bf4, org.uhc.dao.dto.BorrowerInfoDto@14da7929]
+2021-09-22 20:28:33.899  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:35.111  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:36.912  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@534de749, org.uhc.dao.dto.BorrowerInfoDto@1454184f]
+2021-09-22 20:28:37.879  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:39.784  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:41.675  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1b6e049a, org.uhc.dao.dto.BorrowerInfoDto@5cba35ef]
+2021-09-22 20:28:42.374  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:43.538  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:45.414  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@60f1e69e, org.uhc.dao.dto.BorrowerInfoDto@54d31caf]
+2021-09-22 20:28:46.296  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:48.468  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:50.495  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3f72987b, org.uhc.dao.dto.BorrowerInfoDto@32eac737]
+2021-09-22 20:28:51.160  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:52.396  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:54.388  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5dc002e2, org.uhc.dao.dto.BorrowerInfoDto@11ba5b91]
+2021-09-22 20:28:55.039  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:28:57.107  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:28:58.946  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3aa0a89d, org.uhc.dao.dto.BorrowerInfoDto@5e971381]
+2021-09-22 20:28:59.814  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:01.556  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:03.296  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@31ddda3, org.uhc.dao.dto.BorrowerInfoDto@40b86882]
+2021-09-22 20:29:03.867  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:05.075  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:06.827  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7fe3d448, org.uhc.dao.dto.BorrowerInfoDto@190ecb2e]
+2021-09-22 20:29:07.696  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:09.155  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:10.958  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7413ed69, org.uhc.dao.dto.BorrowerInfoDto@77ec6711]
+2021-09-22 20:29:11.602  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:12.780  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:14.525  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@16ccbc30, org.uhc.dao.dto.BorrowerInfoDto@7974527c]
+2021-09-22 20:29:14.812  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:16.580  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:18.363  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@12e7909e, org.uhc.dao.dto.BorrowerInfoDto@627a93c]
+2021-09-22 20:29:18.689  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:19.863  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:21.743  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7579b8f4, org.uhc.dao.dto.BorrowerInfoDto@2ec5e395]
+2021-09-22 20:29:22.051  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:23.931  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:25.745  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@88e5b3, org.uhc.dao.dto.BorrowerInfoDto@3bddc2d7]
+2021-09-22 20:29:26.701  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:28.543  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:30.320  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3db6340, org.uhc.dao.dto.BorrowerInfoDto@203e1e5]
+2021-09-22 20:29:30.908  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:32.067  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:33.805  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@45e1296b, org.uhc.dao.dto.BorrowerInfoDto@10ff807a]
+2021-09-22 20:29:34.684  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:36.420  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:38.147  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@48662046, org.uhc.dao.dto.BorrowerInfoDto@55f7ec66]
+2021-09-22 20:29:38.728  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:39.888  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:41.650  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@19912dc2, org.uhc.dao.dto.BorrowerInfoDto@758182da]
+2021-09-22 20:29:42.537  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:44.439  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:46.221  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@c9ce83c, org.uhc.dao.dto.BorrowerInfoDto@6662b115]
+2021-09-22 20:29:46.872  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:48.186  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:49.957  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@760d6f26, org.uhc.dao.dto.BorrowerInfoDto@f63a46f]
+2021-09-22 20:29:50.882  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:52.676  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:54.436  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@64d560b7, org.uhc.dao.dto.BorrowerInfoDto@17cc8f21]
+2021-09-22 20:29:55.014  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:29:56.187  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:29:57.953  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@aa5a6a1, org.uhc.dao.dto.BorrowerInfoDto@18773b46]
+2021-09-22 20:29:58.809  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:00.559  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:02.285  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@57e82027, org.uhc.dao.dto.BorrowerInfoDto@242e087c]
+2021-09-22 20:30:02.853  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:04.006  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:05.705  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@39922f6, org.uhc.dao.dto.BorrowerInfoDto@221594c8]
+2021-09-22 20:30:06.564  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:08.275  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:10.054  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@346a71b5, org.uhc.dao.dto.BorrowerInfoDto@60d3f2ac]
+2021-09-22 20:30:10.623  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:11.815  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:13.540  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2a17f2d2, org.uhc.dao.dto.BorrowerInfoDto@24aa808c]
+2021-09-22 20:30:14.609  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:16.019  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:18.077  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@432aaa75, org.uhc.dao.dto.BorrowerInfoDto@3c13662e]
+2021-09-22 20:30:18.733  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:20.419  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:22.184  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2987921c, org.uhc.dao.dto.BorrowerInfoDto@59d9c940]
+2021-09-22 20:30:22.807  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:24.757  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:26.568  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4f36b90c, org.uhc.dao.dto.BorrowerInfoDto@683394d2]
+2021-09-22 20:30:27.443  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:29.253  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:31.209  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7db1ecba, org.uhc.dao.dto.BorrowerInfoDto@6ab5b985]
+2021-09-22 20:30:31.801  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:33.157  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:35.053  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@10318306, org.uhc.dao.dto.BorrowerInfoDto@64d000d6]
+2021-09-22 20:30:35.661  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:37.218  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:39.144  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@16f6f4ca, org.uhc.dao.dto.BorrowerInfoDto@51c81e00]
+2021-09-22 20:30:40.091  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:41.575  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:43.515  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4dfd8e8c, org.uhc.dao.dto.BorrowerInfoDto@294fe155]
+2021-09-22 20:30:44.125  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:45.920  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:47.687  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@8be1012, org.uhc.dao.dto.BorrowerInfoDto@1997271b]
+2021-09-22 20:30:48.318  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:49.500  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:51.255  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@38bf534b, org.uhc.dao.dto.BorrowerInfoDto@6eac5840]
+2021-09-22 20:30:52.125  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:53.283  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:54.999  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@16eaeb07, org.uhc.dao.dto.BorrowerInfoDto@3665b93e]
+2021-09-22 20:30:55.580  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:30:57.287  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:30:59.004  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@748291b2, org.uhc.dao.dto.BorrowerInfoDto@78e0b93a]
+2021-09-22 20:30:59.581  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:01.024  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:02.878  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3913c7f2, org.uhc.dao.dto.BorrowerInfoDto@22a435a7]
+2021-09-22 20:31:03.844  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:04.995  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:06.698  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@424b2f40, org.uhc.dao.dto.BorrowerInfoDto@3f9f675a]
+2021-09-22 20:31:07.271  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:08.987  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:10.712  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@18940b0c, org.uhc.dao.dto.BorrowerInfoDto@1b1e1cb4]
+2021-09-22 20:31:11.308  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:12.786  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:14.495  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3401b8, org.uhc.dao.dto.BorrowerInfoDto@44d51353]
+2021-09-22 20:31:15.361  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:17.068  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:18.844  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7c21bcae, org.uhc.dao.dto.BorrowerInfoDto@1731f422]
+2021-09-22 20:31:19.421  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:20.565  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:22.352  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@37a81ebd, org.uhc.dao.dto.BorrowerInfoDto@5b0bdc90]
+2021-09-22 20:31:22.948  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:25.071  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:26.848  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2abecf93, org.uhc.dao.dto.BorrowerInfoDto@3236ae02]
+2021-09-22 20:31:27.705  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:29.153  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:30.945  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@451c130f, org.uhc.dao.dto.BorrowerInfoDto@4076b860]
+2021-09-22 20:31:31.526  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:33.298  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:35.049  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1ce825aa, org.uhc.dao.dto.BorrowerInfoDto@1ba9de8b]
+2021-09-22 20:31:35.618  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:36.756  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:38.457  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3e08329a, org.uhc.dao.dto.BorrowerInfoDto@4b483883]
+2021-09-22 20:31:39.349  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:41.064  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:42.774  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@16d09135, org.uhc.dao.dto.BorrowerInfoDto@43d858e2]
+2021-09-22 20:31:43.345  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:44.488  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:46.253  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3c3b3ee1, org.uhc.dao.dto.BorrowerInfoDto@363d85c5]
+2021-09-22 20:31:47.120  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:48.845  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:51.082  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2476e30e, org.uhc.dao.dto.BorrowerInfoDto@2568b02a]
+2021-09-22 20:31:51.893  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:53.161  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:54.913  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@40c14e50, org.uhc.dao.dto.BorrowerInfoDto@1a08f820]
+2021-09-22 20:31:55.501  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:31:57.049  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:31:58.772  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@9f516fc, org.uhc.dao.dto.BorrowerInfoDto@697c1e08]
+2021-09-22 20:31:59.626  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:01.055  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:02.754  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@23856eb9, org.uhc.dao.dto.BorrowerInfoDto@7e915b11]
+2021-09-22 20:32:03.332  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:05.072  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:06.775  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5f72f0c9, org.uhc.dao.dto.BorrowerInfoDto@56772971]
+2021-09-22 20:32:07.342  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:08.498  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:10.219  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5e8f65a0, org.uhc.dao.dto.BorrowerInfoDto@2ab2e4b3]
+2021-09-22 20:32:11.189  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:13.259  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:15.011  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@628ebd94, org.uhc.dao.dto.BorrowerInfoDto@ddd2c15]
+2021-09-22 20:32:15.619  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:18.024  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:19.761  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@28daea6b, org.uhc.dao.dto.BorrowerInfoDto@157014bf]
+2021-09-22 20:32:20.354  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:22.067  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:23.798  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2057998, org.uhc.dao.dto.BorrowerInfoDto@665c5049]
+2021-09-22 20:32:24.410  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:25.546  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:27.295  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@19aa675b, org.uhc.dao.dto.BorrowerInfoDto@c6a5d3d]
+2021-09-22 20:32:28.156  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:29.887  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:31.632  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@250a2c91, org.uhc.dao.dto.BorrowerInfoDto@2150fe61]
+2021-09-22 20:32:32.226  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:33.356  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:35.082  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6b8ad5af, org.uhc.dao.dto.BorrowerInfoDto@3557ee56]
+2021-09-22 20:32:35.661  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:37.985  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:39.778  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@41cd22c9, org.uhc.dao.dto.BorrowerInfoDto@67c86f67]
+2021-09-22 20:32:40.357  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:42.447  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:44.178  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@5ad2e99c, org.uhc.dao.dto.BorrowerInfoDto@507d99ce]
+2021-09-22 20:32:45.045  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:47.347  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:49.080  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@780e3262, org.uhc.dao.dto.BorrowerInfoDto@5c99d953]
+2021-09-22 20:32:49.649  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:51.359  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:53.077  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@11ca4555, org.uhc.dao.dto.BorrowerInfoDto@2d450d4b]
+2021-09-22 20:32:53.645  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:32:55.648  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:32:57.495  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@24d1a7a3, org.uhc.dao.dto.BorrowerInfoDto@3610a12b]
+2021-09-22 20:32:58.373  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:00.670  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:02.421  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@7533aa51, org.uhc.dao.dto.BorrowerInfoDto@7099cee9]
+2021-09-22 20:33:02.998  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:04.763  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:06.526  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@595c93e6, org.uhc.dao.dto.BorrowerInfoDto@6af6781f]
+2021-09-22 20:33:07.223  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:09.231  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:10.953  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@2ff2632, org.uhc.dao.dto.BorrowerInfoDto@3caf5e02]
+2021-09-22 20:33:11.522  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:13.820  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:15.549  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1d139d2, org.uhc.dao.dto.BorrowerInfoDto@58be9f77]
+2021-09-22 20:33:16.402  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:18.708  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:20.472  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@230bfce4, org.uhc.dao.dto.BorrowerInfoDto@6512f9c9]
+2021-09-22 20:33:21.053  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:22.788  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:24.511  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6d055310, org.uhc.dao.dto.BorrowerInfoDto@416c2ce0]
+2021-09-22 20:33:25.104  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:27.120  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:28.907  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3d7c04f5, org.uhc.dao.dto.BorrowerInfoDto@4fd26e22]
+2021-09-22 20:33:29.488  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:31.881  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:33.640  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@888291b, org.uhc.dao.dto.BorrowerInfoDto@28231fc6]
+2021-09-22 20:33:34.501  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:36.690  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:38.548  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@75a5ed9b, org.uhc.dao.dto.BorrowerInfoDto@29da2e73]
+2021-09-22 20:33:39.416  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:41.173  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:42.928  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@60d31aa2, org.uhc.dao.dto.BorrowerInfoDto@503ef451]
+2021-09-22 20:33:43.520  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:44.666  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:46.615  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@a2d12f8, org.uhc.dao.dto.BorrowerInfoDto@727c0c78]
+2021-09-22 20:33:47.617  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:49.582  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:51.309  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@a021e9f, org.uhc.dao.dto.BorrowerInfoDto@2db9eff2]
+2021-09-22 20:33:51.876  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:54.180  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:33:55.880  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4f61926f, org.uhc.dao.dto.BorrowerInfoDto@5d6c5837]
+2021-09-22 20:33:56.762  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:33:58.519  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:00.269  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@470053e3, org.uhc.dao.dto.BorrowerInfoDto@25a4e28e]
+2021-09-22 20:34:00.864  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:02.093  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:03.851  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6695febf, org.uhc.dao.dto.BorrowerInfoDto@5987afba]
+2021-09-22 20:34:04.771  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:06.532  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:08.277  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1c5d7022, org.uhc.dao.dto.BorrowerInfoDto@1eef51b5]
+2021-09-22 20:34:08.853  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:10.050  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:12.261  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@57c634d1, org.uhc.dao.dto.BorrowerInfoDto@3358bbec]
+2021-09-22 20:34:13.134  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:14.782  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:16.540  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@447301c5, org.uhc.dao.dto.BorrowerInfoDto@20758207]
+2021-09-22 20:34:17.163  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:18.889  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:20.618  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@46734a64, org.uhc.dao.dto.BorrowerInfoDto@30020e9d]
+2021-09-22 20:34:21.195  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:22.469  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:24.216  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6c235c71, org.uhc.dao.dto.BorrowerInfoDto@604a8e48]
+2021-09-22 20:34:25.078  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:27.122  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:28.901  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@3c36c84f, org.uhc.dao.dto.BorrowerInfoDto@1c605fb2]
+2021-09-22 20:34:29.797  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-09-22 20:34:31.876  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-09-22 20:34:33.750  INFO chetuiwk0165 --- [nio-8080-exec-1] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6ad6489b, org.uhc.dao.dto.BorrowerInfoDto@5edab347]

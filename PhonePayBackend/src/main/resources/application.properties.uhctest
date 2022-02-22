@@ -1,0 +1,35 @@
+homeowner.smtp.host=uthc-org.mail.protection.outlook.com
+homeowner.smtp.username=noreply@uthc.org
+
+## Production  DB2 database
+db2.datasource.url=jdbc:as400://IBMWEB/homeowner
+db2.datasource.driver-class-name=com.ibm.as400.access.AS400JDBCDriver
+db2.datasource.username=homeowner
+db2.datasource.password=JT@DG8$25#
+
+# configuration of different database schema name to access data
+uhc.homeowner=hometest
+uhc.ldataser=ldataser
+uhc.combined=combined
+uhc.as400cgi=as400cgi
+uhc.uhfalib=uhfalib
+uhc.utelib=utelib
+
+## Production  postgreSQL database
+postgresql.datasource.url=jdbc:postgresql://nebo.uthc.local:5432/phonepay?autoReconnect=true
+postgresql.datasource.driver-class-name=org.postgresql.Driver
+postgresql.datasource.username=homeowner
+postgresql.datasource.password=JT@DG8$25#
+
+# Spring tomcat Connection Pool Configuration
+spring.datasource.tomcat.max-wait=20000
+spring.datasource.tomcat.max-active=50
+spring.datasource.tomcat.max-idle=20
+spring.datasource.tomcat.min-idle=15
+spring.datasource.tomcat.validation-query= SELECT 1
+
+#Dialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.DB2Dialect
+
+processingPaymentsURL=https://uhctest.utahhousingcorp.org/payment-processing-service/paymentProcessing/phonePay
+sendingEmailConfirmationURL=https://nebo.utahhousingcorp.org/notification-service/email/confirmation

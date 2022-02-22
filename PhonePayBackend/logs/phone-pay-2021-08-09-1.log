@@ -1,0 +1,332 @@
+2021-08-09 14:40:15.911  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 10772 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-08-09 14:40:15.922  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-08-09 14:40:15.948  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Mon Aug 09 14:40:15 IST 2021]; root of context hierarchy
+2021-08-09 14:40:16.066  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-08-09 14:40:17.009  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-09 14:40:17.018  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-08-09 14:40:17.019  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-08-09 14:40:17.095  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-08-09 14:40:17.096  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1149 ms
+2021-08-09 14:40:17.202  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-08-09 14:40:17.202  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-09 14:40:17.202  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-09 14:40:17.203  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-09 14:40:17.203  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-09 14:40:17.203  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-08-09 14:40:17.204  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-09 14:40:17.530  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: e8ecf091-e2e8-4f09-8158-f69a4b859c55
+
+2021-08-09 14:40:17.618  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68217d41, org.springframework.security.web.context.SecurityContextPersistenceFilter@118102ee, org.springframework.security.web.header.HeaderWriterFilter@3491e86e, org.springframework.security.web.authentication.logout.LogoutFilter@3874b815, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@771d1ffb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e1f584d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ac45389, org.springframework.security.web.session.SessionManagementFilter@2eaef76d, org.springframework.security.web.access.ExceptionTranslationFilter@174e1b69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56078cea]
+2021-08-09 14:40:17.750  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Mon Aug 09 14:40:15 IST 2021]; root of context hierarchy
+2021-08-09 14:40:17.791  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-08-09 14:40:17.793  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-08-09 14:40:17.794  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-08-09 14:40:17.795  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 14:40:17.795  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 14:40:17.795  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 14:40:17.795  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 14:40:17.796  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 14:40:17.796  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-08-09 14:40:17.796  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-08-09 14:40:17.797  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-08-09 14:40:17.799  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-08-09 14:40:17.800  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-08-09 14:40:17.800  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-08-09 14:40:17.800  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-08-09 14:40:17.800  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-08-09 14:40:17.801  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-08-09 14:40:17.801  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-08-09 14:40:17.803  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-08-09 14:40:17.803  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-08-09 14:40:17.803  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-08-09 14:40:17.804  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-08-09 14:40:17.804  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-08-09 14:40:17.804  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-08-09 14:40:17.805  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-08-09 14:40:17.806  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-09 14:40:17.806  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-09 14:40:17.823  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-09 14:40:17.824  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-09 14:40:17.845  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-09 14:40:17.938  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-09 14:40:17.948  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-09 14:40:17.957  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-08-09 14:40:17.968  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-08-09 14:40:18.055  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-09 14:40:18.059  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 2.295 seconds (JVM running for 2.811)
+2021-08-09 14:50:08.656  INFO chetuiwk0165 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-09 14:50:08.656  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-09 14:50:08.670  INFO chetuiwk0165 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2021-08-09 14:50:08.713  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.PhonepayCheckController            : Phone-Pay Check API called for : 1038060
+2021-08-09 14:50:08.713  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into getBorrowersInfo method with loan number : 1038060
+2021-08-09 14:50:08.724  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-08-09 14:50:08.724  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-08-09 14:51:05.931  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@6caff19f, org.uhc.dao.dto.BorrowerInfoDto@d8624dc]
+2021-08-09 14:51:05.932  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-08-09 14:51:05.932  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-08-09 14:51:05.933  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-08-09 14:51:07.756  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-08-09 14:51:07.757  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getPropertyInfoByLoanNum method
+2021-08-09 14:51:07.757  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For Property Details, Loan number entered is 
+2021-08-09 14:51:09.554  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Property Details are : org.uhc.dao.dto.PropertyDto@14377556
+2021-08-09 14:51:09.554  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getPropertyInfoByLoanNum method
+2021-08-09 14:51:09.554  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountsByLoanNumber method
+2021-08-09 14:51:09.555  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : To loan number, user name enterd is :1038060
+2021-08-09 14:51:11.360  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : List of loan number is: [1038060, 91038060]
+2021-08-09 14:51:11.361  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountsByLoanNumber method1038060
+2021-08-09 14:51:11.361  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getMailingAddressByLoanNum method
+2021-08-09 14:51:11.361  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For Getting Mailing Adress, Loan number entered is 
+2021-08-09 14:51:13.180  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Mailing Adress is : org.uhc.dao.dto.MailingAddressDto@2d3f6a72
+2021-08-09 14:51:13.180  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getMailingAddressByLoanNum method
+2021-08-09 14:51:13.181  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-08-09 14:51:13.181  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-08-09 14:51:15.000  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-08-09 14:51:15.000  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-08-09 14:51:15.001  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-08-09 14:51:15.001  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-08-09 14:51:15.001  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-08-09 14:51:28.290  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-08-09 14:51:28.290  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-08-09 14:51:28.290  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-08-09 14:51:30.048  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 723293 for userId: 287
+2021-08-09 14:51:30.048  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-08-09 14:51:30.048  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-08-09 14:51:30.048  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-08-09 14:51:31.821  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-08-09 14:51:31.821  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-08-09 14:51:31.821  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into isThereAnActiveTodayPayment method
+2021-08-09 14:51:31.821  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getActivePaymentByPaymentType method
+2021-08-09 14:51:31.821  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : query active payments that the type is: Today
+2021-08-09 14:51:32.131  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getActivePaymentByPaymentType method
+2021-08-09 14:51:32.131  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-08-09 14:51:32.131  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Entering into buildPaymentConfirmationNumber method
+2021-08-09 14:51:33.870  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Generated confirmation number: 573127 for userId: 287
+2021-08-09 14:51:33.870  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from buildPaymentConfirmationNumber method
+2021-08-09 14:51:33.870  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : No active today-type payment found.
+2021-08-09 14:51:33.870  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getPhonePayFeeList service
+2021-08-09 14:51:34.204  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getPhonePayFeeList method
+2021-08-09 14:51:34.204  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.PhonepayCheckServiceImpl         : Exit from getBorrowersInfo method
+2021-08-09 14:51:48.990  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.c.BankingInfoController              : banking Info API called: BankingInfoRequest [routingNum=324377516]
+2021-08-09 14:51:48.990  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.BankingInfoServiceImpl           : Entering into getBankingInfo method
+2021-08-09 14:51:48.990  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Checking if routing number is whitelisted by using routing number: 324377516
+2021-08-09 14:51:50.718  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from isRoutingNumberWhiteListed method
+2021-08-09 14:51:50.718  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into getBankingInfoByRoutingNum method: 324377516
+2021-08-09 14:51:52.461  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from getBankingInfoByRoutingNum method: 324377516
+2021-08-09 14:51:52.461  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.BankingInfoServiceImpl           : Exit from getBankingInfo method
+2021-08-09 14:51:57.305  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.c.CheckStopFileExistanceController   : Cancel Payment Service API is called: 1038060
+2021-08-09 14:51:57.305  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.s.i.BankingInfoServiceImpl           : Entering into isLoanAccountInStopFile method with loan number : 1038060
+2021-08-09 14:51:57.305  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Entering into isLoanInStopFile method
+2021-08-09 14:51:58.491  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.c.CheckStopFileExistanceController   : Cancel Payment Service API is called: 91038060
+2021-08-09 14:51:58.491  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.BankingInfoServiceImpl           : Entering into isLoanAccountInStopFile method with loan number : 91038060
+2021-08-09 14:51:58.491  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into isLoanInStopFile method
+2021-08-09 14:51:59.018  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : loan account is not available in stopfile
+2021-08-09 14:51:59.018  INFO chetuiwk0165 --- [nio-8080-exec-7] o.u.d.i.UserDaoImpl                      : Exit from isLoanInStopFile method
+2021-08-09 14:52:00.489  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : loan account is not available in stopfile
+2021-08-09 14:52:00.490  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from isLoanInStopFile method
+2021-08-09 14:52:06.106  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.c.ScheduledCheckPaymentController    : scheduleCheckPayment API called: CheckPaymentRequest [loanNumber=1038060, pay=true, printedConfirmation=false, scheduledPayments=[org.uhc.envelop.request.ScheduledCheckPaymentRequest@3bb9ec3f, org.uhc.envelop.request.ScheduledCheckPaymentRequest@7fb2933e], schedulingPayment=org.uhc.envelop.request.ScheduledCheckPaymentRequest@16bfba52, emailAddressList=[mbva@uthc.org]]
+2021-08-09 14:52:06.106  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getUserByLoanNumber method
+2021-08-09 14:52:06.106  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : getUserByLoanNumber, loanNumber = 
+2021-08-09 14:52:07.879  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getUserByLoanNumber method
+2021-08-09 14:52:07.880  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : User is registred
+2021-08-09 14:52:07.880  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-08-09 14:52:07.880  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-08-09 14:52:09.774  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-08-09 14:52:09.774  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-08-09 14:52:09.774  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into schedulePayment service
+2021-08-09 14:52:10.184  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from schedulePayment service
+2021-08-09 14:52:10.184  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLastUpdatedSchedulePaymentIdByLoanNumber method
+2021-08-09 14:52:10.517  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLastUpdatedSchedulePaymentIdByLoanNumber method
+2021-08-09 14:52:10.517  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:10.856  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:10.856  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:10.857  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:11.158  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:11.158  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:11.158  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:11.450  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:11.451  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:11.451  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:11.734  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:11.734  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:11.735  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:12.020  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:12.020  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:12.020  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:12.319  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:12.319  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:12.320  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering Into getpaymentAdviceIdByName method
+2021-08-09 14:52:12.644  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getpaymentAdviceIdByName method
+2021-08-09 14:52:12.645  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into addPaymentAdviceDetails method
+2021-08-09 14:52:13.558  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from addPaymentAdviceDetails method
+2021-08-09 14:52:13.558  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Payment Advice details updated successfully
+2021-08-09 14:52:13.558  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLoanAccountDetailsByLoanNum method
+2021-08-09 14:52:13.558  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : For getting Loan Account details, Loan number entered is
+2021-08-09 14:52:15.323  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Loan account details by loan number is :
+2021-08-09 14:52:15.323  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLoanAccountDetailsByLoanNum method
+2021-08-09 14:52:15.323  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into schedulePayment service
+2021-08-09 14:52:15.607  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from schedulePayment service
+2021-08-09 14:52:15.607  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into getLastUpdatedSchedulePaymentIdByLoanNumber method
+2021-08-09 14:52:15.921  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from getLastUpdatedSchedulePaymentIdByLoanNumber method
+2021-08-09 14:52:15.921  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:16.210  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:16.210  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:16.210  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:16.501  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:16.501  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:16.502  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:16.809  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:16.809  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:16.809  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:17.142  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from insertFeeTableBySchedulePaymentId method
+2021-08-09 14:52:17.142  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Fee table details inserted successfully
+2021-08-09 14:52:17.142  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering Into getpaymentAdviceIdByName method
+2021-08-09 14:52:17.433  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit From getpaymentAdviceIdByName method
+2021-08-09 14:52:17.434  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Entering into addPaymentAdviceDetails method
+2021-08-09 14:52:18.306  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.d.i.UserDaoImpl                      : Exit from addPaymentAdviceDetails method
+2021-08-09 14:52:18.306  INFO chetuiwk0165 --- [nio-8080-exec-2] o.u.s.i.ScheduledCheckPaymentServiceImpl : Payment Advice details updated successfully
+2021-08-09 14:52:23.879  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.c.PaymentAdviceController            : allPaymentAdviceAPI advice API called
+2021-08-09 14:52:23.879  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.s.i.AllPaymentAdviceServiceImpl      : Entering into getAllPaymentAdviceDetails method
+2021-08-09 14:52:23.879  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into getAllPaymentAdviceDetails method
+2021-08-09 14:52:24.219  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Loan Account List: Got payment advice details successfully 
+2021-08-09 14:52:24.219  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from getPaymentAdviceDetails method
+2021-08-09 14:52:24.219  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-08-09 14:52:24.219  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-08-09 14:52:25.964  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@71c67da8, org.uhc.dao.dto.BorrowerInfoDto@bedb538]
+2021-08-09 14:52:25.964  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-08-09 14:52:25.965  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into getOtherFeeListForPayment method
+2021-08-09 14:52:26.275  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-08-09 14:52:26.275  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from getOtherFeeListForPayment method
+2021-08-09 14:52:26.275  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:26.566  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:26.566  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:26.848  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:26.849  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:27.134  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:27.134  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:27.419  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:27.420  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:27.705  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:27.705  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:27.993  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:27.993  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-08-09 14:52:27.994  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-08-09 14:52:29.724  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@1641d3b2, org.uhc.dao.dto.BorrowerInfoDto@5428d7ef]
+2021-08-09 14:52:29.724  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-08-09 14:52:29.724  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering into getOtherFeeListForPayment method
+2021-08-09 14:52:30.012  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-08-09 14:52:30.012  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit from getOtherFeeListForPayment method
+2021-08-09 14:52:30.012  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:30.306  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:30.307  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:30.590  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:30.591  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:30.877  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:30.878  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:52:31.161  INFO chetuiwk0165 --- [nio-8080-exec-5] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:52:39.508  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.c.PaymentAdviceController            : update payment advice API called
+2021-08-09 14:52:39.508  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Entering Into updatePaymentAdvice method
+2021-08-09 14:52:39.799  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.d.i.UserDaoImpl                      : Exit From updatePaymentAdvice method
+2021-08-09 14:52:39.799  INFO chetuiwk0165 --- [nio-8080-exec-8] o.u.s.i.BankingInfoServiceImpl           : Payment advice updated successfully
+2021-08-09 14:56:20.322  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.c.PaymentAdviceController            : update payment advice API called
+2021-08-09 14:56:20.323  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Entering Into updatePaymentAdvice method
+2021-08-09 14:56:20.642  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.d.i.UserDaoImpl                      : Exit From updatePaymentAdvice method
+2021-08-09 14:56:20.642  INFO chetuiwk0165 --- [io-8080-exec-10] o.u.s.i.BankingInfoServiceImpl           : Payment advice updated successfully
+2021-08-09 14:56:21.649  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.c.PaymentAdviceController            : allPaymentAdviceAPI advice API called
+2021-08-09 14:56:21.649  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.s.i.AllPaymentAdviceServiceImpl      : Entering into getAllPaymentAdviceDetails method
+2021-08-09 14:56:21.649  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getAllPaymentAdviceDetails method
+2021-08-09 14:56:21.936  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Loan Account List: Got payment advice details successfully 
+2021-08-09 14:56:21.937  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getPaymentAdviceDetails method
+2021-08-09 14:56:21.937  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-08-09 14:56:21.937  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-08-09 14:56:23.700  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@64f814ae, org.uhc.dao.dto.BorrowerInfoDto@21fa9655]
+2021-08-09 14:56:23.700  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-08-09 14:56:23.700  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getOtherFeeListForPayment method
+2021-08-09 14:56:23.987  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-08-09 14:56:23.987  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getOtherFeeListForPayment method
+2021-08-09 14:56:23.987  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:24.276  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:24.276  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:24.561  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:24.562  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:24.855  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:24.855  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:25.140  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:25.141  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:25.456  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:25.457  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:25.739  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:25.740  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getBorroweListByLoanNumber method
+2021-08-09 14:56:25.740  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : The loan number, user name enterd is :
+2021-08-09 14:56:27.472  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : List of Borrower is: [org.uhc.dao.dto.BorrowerInfoDto@4ce9e33b, org.uhc.dao.dto.BorrowerInfoDto@10913224]
+2021-08-09 14:56:27.472  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getBorroweListByLoanNumber method
+2021-08-09 14:56:27.472  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering into getOtherFeeListForPayment method
+2021-08-09 14:56:27.918  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Other Fee List : 
+2021-08-09 14:56:27.918  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit from getOtherFeeListForPayment method
+2021-08-09 14:56:27.918  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:28.203  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:28.204  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:28.486  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:28.486  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:28.781  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 14:56:28.781  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Entering Into getFeeNameByFeeId method
+2021-08-09 14:56:29.065  INFO chetuiwk0165 --- [nio-8080-exec-9] o.u.d.i.UserDaoImpl                      : Exit From getFeeNameByFeeId method
+2021-08-09 18:56:18.432  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Starting PhonePayAPIApplication on chetuiwk0165 with PID 20868 (E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend\target\classes started by pradeepy in E:\UtahHousingCorp-MGLD\PhonePayWorkspace_12April\PhonePayBackend)
+2021-08-09 18:56:18.435  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : No active profile set, falling back to default profiles: default
+2021-08-09 18:56:18.461  INFO chetuiwk0165 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Mon Aug 09 18:56:18 IST 2021]; root of context hierarchy
+2021-08-09 18:56:18.594  INFO chetuiwk0165 --- [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 5.3.5.Final
+2021-08-09 18:56:19.636  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-08-09 18:56:19.649  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-08-09 18:56:19.650  INFO chetuiwk0165 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-08-09 18:56:19.743  INFO chetuiwk0165 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-08-09 18:56:19.743  INFO chetuiwk0165 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1285 ms
+2021-08-09 18:56:19.858  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'CORSFilter' to: [/*]
+2021-08-09 18:56:19.858  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-08-09 18:56:19.859  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-08-09 18:56:19.859  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-08-09 18:56:19.859  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2021-08-09 18:56:19.860  INFO chetuiwk0165 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-08-09 18:56:19.860  INFO chetuiwk0165 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-08-09 18:56:20.199  INFO chetuiwk0165 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 07de8150-65eb-4438-8fb3-31de92bc18e3
+
+2021-08-09 18:56:20.274  INFO chetuiwk0165 --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56078cea, org.springframework.security.web.context.SecurityContextPersistenceFilter@1639f93a, org.springframework.security.web.header.HeaderWriterFilter@4f966719, org.springframework.security.web.authentication.logout.LogoutFilter@30a7c98f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68f32020, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2eaef76d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a00eb1e, org.springframework.security.web.session.SessionManagementFilter@1046498a, org.springframework.security.web.access.ExceptionTranslationFilter@2babf189, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75769ab0]
+2021-08-09 18:56:20.405  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5542c4ed: startup date [Mon Aug 09 18:56:18 IST 2021]; root of context hierarchy
+2021-08-09 18:56:20.449  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bankingInfo],methods=[POST]}" onto public java.lang.Object org.uhc.controller.BankingInfoController.bankingInfoAPI(org.uhc.envelop.request.BankingInfoRequest)
+2021-08-09 18:56:20.451  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/cancelPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CancelPaymentController.cancelPaymentAPI(org.uhc.envelop.request.CancelPaymentRequest)
+2021-08-09 18:56:20.451  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isLoanExistStopFile/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.CheckStopFileExistanceController.isLoanAccountInStopFileAPI(long)
+2021-08-09 18:56:20.452  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 18:56:20.452  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNames],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 18:56:20.453  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 18:56:20.453  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLastNamesForFirstAndLastName],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getLastNamesListByFirstAndLastNameAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 18:56:20.453  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getFirstAndLastNamesListForAutocomplete],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetNamesController.getFirstAndLastNamesListForAutocompleteAPI(org.uhc.envelop.request.GetNamesRequest)
+2021-08-09 18:56:20.454  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentBatch],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetPaymentBatchController.getPaymentBatchAPI()
+2021-08-09 18:56:20.455  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getScheduledPaymentList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetScheduledPaymentListController.getScheduledPaymentListAPI()
+2021-08-09 18:56:20.455  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getStatisticDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.GetStatisticDetailsController.getStatisticDetailsAPI(org.uhc.envelop.request.GetStatisticDetailsRequest)
+2021-08-09 18:56:20.458  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdviceType],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceTypeAPI(org.uhc.envelop.request.UpdatePaymentAdviceTypeReq)
+2021-08-09 18:56:20.458  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allPaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.allPaymentAdviceAPI()
+2021-08-09 18:56:20.459  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/updatePaymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.updatePaymentAdviceAPI(org.uhc.envelop.request.UpdatePaymentAdviceReq)
+2021-08-09 18:56:20.459  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/deletProcessAdvicePayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.deletProcessAdvicePaymentAPI(org.uhc.envelop.request.DeleteProcessAdvicePaymentReq)
+2021-08-09 18:56:20.459  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paymentAdvice],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentAdviceController.paymentAdviceAPI(org.uhc.envelop.request.PaymentAdviceReq)
+2021-08-09 18:56:20.460  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getPaymentsInProcess],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PaymentsInProcessController.getPaymentsInProcessAPI()
+2021-08-09 18:56:20.460  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phonepayCheck/{loanNumber}],methods=[POST]}" onto public java.lang.Object org.uhc.controller.PhonepayCheckController.phonepayCheckAPI(long)
+2021-08-09 18:56:20.463  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsNotificationListAPI(org.uhc.envelop.request.ProcessPaymentSendEmailReq)
+2021-08-09 18:56:20.463  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsLetterNotificationList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsLetterNotificationListAPI(org.uhc.envelop.request.ProcessPaymentPrintLetterReq)
+2021-08-09 18:56:20.463  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getProcessPaymentsList],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ProcessPaymnetsController.getProcessPaymentsListAPI()
+2021-08-09 18:56:20.464  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResearchPaymentDetails],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.getResearchPaymentInfoAPI(org.uhc.envelop.request.GetResearchPaymentRequest)
+2021-08-09 18:56:20.464  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/researchPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ResearchPaymentController.researchPaymentInfoAPI(org.uhc.envelop.request.ResearchPaymentRequest)
+2021-08-09 18:56:20.464  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleCheckPayment],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ScheduledCheckPaymentController.scheduleCheckPaymentAPI(org.uhc.envelop.request.CheckPaymentRequest) throws java.lang.Exception
+2021-08-09 18:56:20.465  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/validateUser],methods=[POST]}" onto public java.lang.Object org.uhc.controller.ValidateUserController.validateUserAPI(org.uhc.envelop.request.ValidateUserRequest)
+2021-08-09 18:56:20.466  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-09 18:56:20.466  INFO chetuiwk0165 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-09 18:56:20.482  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-09 18:56:20.482  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-09 18:56:20.503  INFO chetuiwk0165 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-09 18:56:20.588  INFO chetuiwk0165 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-09 18:56:20.599  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-09 18:56:20.609  INFO chetuiwk0165 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2021-08-09 18:56:20.635  INFO chetuiwk0165 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2021-08-09 18:56:20.653  INFO chetuiwk0165 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-08-09 18:56:20.658  INFO chetuiwk0165 --- [           main] o.u.PhonePayAPIApplication               : Started PhonePayAPIApplication in 2.375 seconds (JVM running for 3.013)
